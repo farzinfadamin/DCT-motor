@@ -128,7 +128,7 @@ p{ line-height: 18px;}
 	background-position: right -28px;
 }
 
-*[class*="icon-"]{
+*[class *="icon-"]{
 	padding-left: 30px;
 	background-size: 24px 24px;
 	background-repeat: no-repeat;

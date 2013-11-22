@@ -128,7 +128,7 @@ p{ line-height: 18px;}
 	background-position: right -28px;
 }
 
-.icon{
+*[class*="icon-"]{
 	padding-left: 30px;
 	background-size: 24px 24px;
 	background-repeat: no-repeat;
@@ -303,13 +303,13 @@ p{ line-height: 18px;}
     border-left: 2px solid #a0090b;
 }
 
-.footer-links section a.icon{
+.footer-links section a[class*="icon-"]{
     background-size: 16px 16px;
     padding-left: 24px;
 }
 
-.footer-links section a.icon:hover,
-.footer-links section a.icon.active{
+.footer-links section a[class*="icon-"]:hover,
+.footer-links section a[class*="icon-"].active{
     padding-left: 28px;
     background-position: 5px center;
 }

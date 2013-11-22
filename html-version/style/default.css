@@ -303,13 +303,13 @@ p{ line-height: 18px;}
     border-left: 2px solid #a0090b;
 }
 
-.footer-links section a[class*="icon-"]{
+.footer-links section [class*="icon-"]{
     background-size: 16px 16px;
     padding-left: 24px;
 }
 
-.footer-links section a[class*="icon-"]:hover,
-.footer-links section a[class*="icon-"].active{
+.footer-links section [class*="icon-"]:hover,
+.footer-links section [class*="icon-"].active{
     padding-left: 28px;
     background-position: 5px center;
 }

@@ -1,0 +1,171 @@
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+
+    .header-container{
+        height: initial;
+        opacity: 0.95;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    .header-container hgroup{
+        position: initial;
+        left: initial;
+        top: initial;
+        width: 250px;
+        margin: 0;
+        float: left;
+    }
+    .mobile-header-anchors{display: none;}
+    .header-container .logo img{ height: 60px;}
+
+    .header-container header > aside{
+        float: right;
+        text-align: right;
+        display: block;
+    }
+    .header-container .top-section{ margin-bottom: 10px;}
+    .header-container .top-section > *{
+        display: inline-block;
+    }
+    .header-container .top-section > span{
+        padding-right: 5px;
+        font-size: 18px;
+    }
+
+    .header-container .top-section small{
+        font-size: 13px;
+    }
+
+    .header-container .social-links a{
+        background-size: 16px 16px;
+        padding-left: 0;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin: 0 3px;
+    }
+
+    .header-container .social-links a:hover{
+        opacity: 0.5;
+    }
+
+    .main-nav li{
+        float: left;
+        margin-left: 20px;
+    }
+
+    .main-nav a{
+        color: #ccc;
+        text-transform: uppercase;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active{
+        color: #fff;
+        border-bottom: 2px solid #a0090b;
+        padding-bottom: 5px;
+    }
+
+    .main-nav a.icon-home{
+        background-size: 24px 24px;
+        background-position: center top;
+        display: block;
+        height: 29px;
+        padding-bottom: 5px;
+    }
+
+    .slide-details-anchor{display: none;}
+    .slide-details{
+        display: block;
+        width: 400px;
+    }
+    .slide-details p{font-size: 14px}
+    .slide-details .btn-more{margin-top: 15px}
+
+    .dct-box header{
+        text-align: left;
+        display: inline-block;
+        width: 100%;
+    }
+    .dct-box header h2{ float: left;}
+    .dct-box header a{
+        float: right;
+        margin-top: 20px;
+        display: block;
+    }
+
+    .footer-links{ display: block;}
+    .address-box .social-links{display: none;}
+    .address-box .contact-links a span {
+        background-size: 24px 24px;
+        padding: 5px 10px 5px 30px;
+    }
+    .copyright .right{float: right;}
+    .copyright .left{float: left;}
+
+    .testimonial-list > div{padding-top: 0;}
+    .testimonial-list section{
+        text-align: left;
+        position: relative;
+        top: initial;
+        margin-bottom: initial;
+        padding-left: 70px;
+    }
+
+    .testimonial-list .even-box section{
+        padding-right: 70px;
+        padding-left: 0;
+    }
+
+    .testimonial-list figure{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -60px;
+        width: 120px;
+        height: 120px;
+        z-index: 10;
+    }
+
+    .testimonial-list .even-box figure{
+        left: initial;
+        right: 0;
+    }
+
+    .testimonial-list aside {
+        position: relative;
+        top: initial;
+        padding: 20px 20px 20px 75px;
+        height: 200px;
+    }
+
+    .testimonial-list .even-box aside {
+        padding: 20px 75px 20px 20px;
+    }
+
+    .testimonial-list time {
+        display: inline;
+        margin-left: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+	.footer-links section{float: left;}
+    .address-box address,
+    .address-box .contact-links a
+    {font-size: 12px;}
+}
+
+@media only screen and (min-width: 1200px) {
+	.wrapper{
+		width: 1170px;
+		margin: 0 auto;
+	}
+}

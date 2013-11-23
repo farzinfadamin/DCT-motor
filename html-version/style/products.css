@@ -1,0 +1,46 @@
+/* =============
+   Products
+   ============= */
+   
+.cat-row{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	background: url("images/general/splitter.png") no-repeat bottom center transparent;
+	background-size: 100% 1px;
+	text-align: center;
+}
+
+.cat-row:last-child{
+	background: none;
+	margin-bottom: 0;
+}
+
+.cat-row > a{
+	display: block;
+}
+
+.cat-row aside > header{
+	display: inline-block;
+	width: 100%;
+	margin: 20px 0 0;
+}
+
+.cat-row aside > header h2{
+	margin: 10px 0;
+	display: inline-block;
+	background-size: 32px 32px;
+	padding: 10px 0 10px 40px;
+}
+
+.cat-row aside > header a{
+	display: none;
+}
+
+.cat-row aside p{
+	margin: 0 0 1em;
+	line-height: 20px;
+}
+
+.thumbs-list{display: none;}

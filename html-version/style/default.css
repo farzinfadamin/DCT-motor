@@ -48,6 +48,14 @@ textarea {
     resize: vertical;
 }
 
+*,
+*:before,
+*:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .chromeframe {
     margin: 0.2em 0;
     background: #ccc;
@@ -95,7 +103,6 @@ a,
 a:link{
 	-webkit-transition: all 0.12s ease-in-out 0s;
 	-moz-transition: all 0.12s ease-in-out 0s;
-    -o-transition: all 0.12s ease-in-out 0s;
 	transition: all 0.12s ease-in-out 0s;
 }
 
@@ -106,7 +113,7 @@ h3 {font-size: 20px;}
 
 p{ line-height: 18px;}
 
-.btn{
+*[class *="btn"]{
 	background-color: #a0090b;
 	color: #fff;
 	text-align: left;
@@ -114,19 +121,11 @@ p{ line-height: 18px;}
 	display: inline-block;
 }
 
-.btn:hover{
-	background-color: #fff;
-	color: #a0090b;
-}
-
 .btn-more{
     padding: 1px 30px 1px 15px;
 	background: url("images/general/arrow-small-right.png") no-repeat right 0 #a0090b;
 }
 
-.btn-more:hover{
-	background-position: right -28px;
-}
 
 *[class *="icon-"]{
 	padding-left: 30px;
@@ -171,6 +170,21 @@ p{ line-height: 18px;}
 	height: 48px;
 }
 
+.inner-page .header-container .logo{
+    display: none;
+}
+
+.header-container hgroup h1{
+    vertical-align: middle;
+    line-height: 40px;
+    margin: 0;
+}
+
+.header-container hgroup h2{
+    margin: 0;
+    font-size: 13px
+}
+
 .mobile-header-anchors a{
 	width: 32px;
 	height: 32px;
@@ -193,6 +207,40 @@ p{ line-height: 18px;}
 
 .header-container header > aside{display: none;}
 
+
+.banner-wrapper{
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.banner-wrapper img{
+    width: 100%;
+    height: auto;
+}
+
+.main > header{
+    display: none;
+}
+
+.image-frame{
+    border: 5px solid rgba(255,255,255,0.2);
+    display: block;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+.image-frame figure{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.image-frame img{
+    width: 100%;
+    display: block;
+}
 
 .footer-container{
     background-color: #000;
@@ -303,13 +351,13 @@ p{ line-height: 18px;}
     border-left: 2px solid #a0090b;
 }
 
-.footer-links section [class*="icon-"]{
+.footer-links section [class *="icon-"]{
     background-size: 16px 16px;
     padding-left: 24px;
 }
 
-.footer-links section [class*="icon-"]:hover,
-.footer-links section [class*="icon-"].active{
+.footer-links section [class *="icon-"]:hover,
+.footer-links section [class *="icon-"].active{
     padding-left: 28px;
     background-position: 5px center;
 }

@@ -5,12 +5,14 @@
 @media only screen and (min-width: 768px) {
 
 
-    *[class *="btn"]:hover{
+    .no-touch *[class *="btn"]:hover.
+    .no-js *[class *="btn"]:hover{
         background-color: #fff;
         color: #a0090b;
     }
 
-    .btn-more:hover{
+    .no-touch .btn-more:hover,
+    .no-js .btn-more:hover{
         background-position: right -28px;
     }
 
@@ -67,7 +69,8 @@
         margin: 0 3px;
     }
 
-    .header-container .social-links a:hover{
+    .no-touch .header-container .social-links a:hover,
+    .no-js .header-container .social-links a:hover{
         opacity: 0.5;
     }
 
@@ -81,7 +84,8 @@
         text-transform: uppercase;
     }
 
-    .main-nav a:hover,
+    .no-touch .main-nav a:hover,
+    .no-js .main-nav a:hover,
     .main-nav a.active{
         color: #fff;
         border-bottom: 2px solid #a0090b;
@@ -160,10 +164,30 @@
         display: block;
     }
 
+    .products-cat-list .overlay-box span[class *="icon-"]{
+        background-size: 70px 70px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .products-cat-list .overlay-box h4{
+        font-size: 20px;
+        margin: 5px 0 10px;
+        font-weight: 400;
+    }
+
+    .products-cat-list .overlay-box p{
+        display: none;
+    }
 
     .product-list h4 {
         text-align: left;
         font-size: 13px;
+    }
+
+    .no-touch .product-list section:hover .overlay-box,
+    .no-js .product-list section:hover .overlay-box{
+        bottom: 0;
     }
 
     .footer-links{ display: block;}
@@ -280,7 +304,8 @@
         transition: all 0.12s ease-in-out 0s;
     }
 
-    .thumbs-list a:hover:before{
+    .no-touch .thumbs-list a:hover:before,
+    .no-js .thumbs-list a:hover:before{
         opacity: 1;
     }
 
@@ -288,6 +313,7 @@
 }
 
 @media only screen and (min-width: 992px) {
+
 	.footer-links section{float: left;}
     .address-box address,
     .address-box .contact-links a{font-size: 12px;}
@@ -305,4 +331,19 @@
 		width: 1170px;
 		margin: 0 auto;
 	}
+
+    .products-cat-list .overlay-box span[class *="icon-"]{
+        background-size: 60px 60px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .products-cat-list .overlay-box h4{
+        margin: 5px 0;
+    }
+
+    .products-cat-list .overlay-box p{
+        display: block;
+    }
+
 }

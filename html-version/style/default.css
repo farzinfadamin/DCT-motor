@@ -70,8 +70,9 @@ textarea {
 
 body {
     font: 16px/26px 'Helvetica Neue', 'Helvetica', 'Open Sans', sans-serif;
-	background: url("images/general/bg.png") repeat left top;
+	background: url("images/general/bg.png") repeat left top #101011;
 	color: #ccc;
+    font-weight: 300;
 }
 
 ul{
@@ -112,6 +113,10 @@ h2 {font-size: 25px;}
 h3 {font-size: 20px;}
 
 p{ line-height: 18px;}
+
+*[data-href]{
+    cursor: pointer;
+}
 
 *[class *="btn"]{
 	background-color: #a0090b;
@@ -191,7 +196,8 @@ p{ line-height: 18px;}
 	display: block;
 }
 
-.mobile-header-anchors a:hover{
+.no-touch .mobile-header-anchors a:hover,
+.no-js .mobile-header-anchors a:hover{
 	opacity: 0.6;
 }
 
@@ -324,7 +330,7 @@ p{ line-height: 18px;}
 .footer-links section{
     display: inline-table;
     width: 30%;
-    margin-right: 3%;
+    margin-right: 2%;
     vertical-align: top;
 }
 
@@ -344,7 +350,8 @@ p{ line-height: 18px;}
     color: #888;
 }
 
-.footer-links section a:hover,
+.no-touch .footer-links section a:hover,
+.no-js .footer-links section a:hover,
 .footer-links section a.active{
     color: #fff;
     padding-left: 5px;
@@ -356,7 +363,8 @@ p{ line-height: 18px;}
     padding-left: 24px;
 }
 
-.footer-links section [class *="icon-"]:hover,
+.no-touch .footer-links section [class *="icon-"]:hover,
+.no-js .footer-links section [class *="icon-"]:hover,
 .footer-links section [class *="icon-"].active{
     padding-left: 28px;
     background-position: 5px center;

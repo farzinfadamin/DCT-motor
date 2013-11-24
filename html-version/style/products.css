@@ -44,3 +44,92 @@
 }
 
 .thumbs-list{display: none;}
+
+.product-choose-brand{
+	text-align: center;
+}
+
+.product-choose-brand > *{
+	margin-bottom: 40px;
+	display: inline-block;
+}
+
+.product-choose-brand h3{
+	margin-top: 0;
+}
+
+.selected-cats-list li{
+	float: left;
+	width: 46%;
+	margin: 0 2% 10px 2%;
+	padding-left: 2%;
+}
+
+.selected-cats-list li a{
+    background-color: rgba(0,0,0,.7);
+    display: block;
+    position: relative;
+    color: #fff;
+    padding: 5px;
+}
+
+.no-touch .selected-cats-list li a:hover,
+.no-js .selected-cats-list li a:hover{
+    background-color: rgba(0,0,0,1);
+}
+
+.selected-cats-list li figure{
+	display: none;
+}
+
+.selected-cats-list li a h4{
+	margin: 5px 0;
+	font-size: 16px;
+	text-transform: none;
+}
+
+.brand-make{
+	text-align: center;
+}
+
+.brand-make figure{
+	background-color: #000;
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+.brand-make figure > img{
+	float: right;
+	width: 70%;
+}
+
+.brand-make figcaption{
+	width: 30%;
+	height: 50%;
+	position: absolute;
+	top: 50%;
+	margin-top: -8%;
+}
+
+.brand-make figcaption img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.brand-make figcaption span{
+	display: block;
+	font-size: 13px;
+}
+
+.brand-make-select > section{
+	width: 50%;
+	float: left;
+	padding: 0 1%;
+	margin-bottom: 40px;
+}
+
+.brand-make-select > section h4{
+	margin-bottom: 5px;
+}

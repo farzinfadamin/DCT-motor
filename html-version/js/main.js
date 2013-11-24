@@ -23,5 +23,7 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
 }
 	
 $(document).ready(function(){	
-	
+	$('.js-brand-list a').on('mouseenter mouseleave', function(){
+		$(this).parent().siblings('li').toggleClass('dimmed');
+	})
 });

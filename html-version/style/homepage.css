@@ -164,58 +164,6 @@
 	color: #ccc;
 }
 
-.brand-list{
-	background-color: rgba(0,0,0,0.6);
-	padding: 15px;
-	display: inline-table;
-	width: 100%;
-	text-align: left;
-}
-
-.brand-list li{
-	display: inline-block;
-	text-align: center;
-	margin: 2% 2.5%;
-}
-
-.brand-list li a{
-	color: #ccc;
-}
-
-
-.brand-list li img{
-	display: inline-block;
-	position: relative;
-	-webkit-transition: all 0.12s ease-in-out 0s;
-	-moz-transition: all 0.12s ease-in-out 0s;
-	transition: all 0.12s ease-in-out 0s;
-}
-
-.brand-list li span{
-	display: block;
-	position: relative;
-	-webkit-transition: all 0.12s ease-in-out 0s;
-	-moz-transition: all 0.12s ease-in-out 0s;
-	transition: all 0.12s ease-in-out 0s;
-}
-
-.no-touch .brand-list li a:hover,
-.no-js .brand-list li a:hover{
-	color: #fff;
-}
-
-.no-touch .brand-list li a:hover img,
-.no-js .brand-list li a:hover img{
-	color: #fff;
-	top: -2px;
-}
-
-.no-touch .brand-list li a:hover span,
-.no-js .brand-list li a:hover span{
-	bottom: -2px;
-}
-
-
 
 .product-list > div{
 	margin-bottom: 15px;

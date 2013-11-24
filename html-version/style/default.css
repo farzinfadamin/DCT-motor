@@ -131,6 +131,23 @@ p{ line-height: 18px;}
 	background: url("images/general/arrow-small-right.png") no-repeat right 0 #a0090b;
 }
 
+.btn-large{
+    padding: 5px 40px;
+    font-size: 20px;
+}
+
+
+.no-touch *[class *="btn"]:hover,
+.no-js *[class *="btn"]:hover{
+    background-color: #fff;
+    color: #a0090b;
+}
+
+.no-touch .btn-more:hover,
+.no-js .btn-more:hover{
+    background-position: right -28px;
+}
+
 
 *[class *="icon-"]{
 	padding-left: 30px;
@@ -150,6 +167,113 @@ p{ line-height: 18px;}
 .icon-twitter{ background-image: url("images/general/icon-twitter.png"); }
 .icon-youtube{ background-image: url("images/general/icon-youtube.png"); }
 .icon-instagram{ background-image: url("images/general/icon-instagram.png"); }
+
+
+.dct-checkbox{
+    border: 3px solid rgba(255,255,255,0.2);
+    background-color: transparent;
+    padding: 3px;
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    margin-top: -16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    -webkit-transition: all 0.12s ease-in-out 0s;
+    -moz-transition: all 0.12s ease-in-out 0s;
+    transition: all 0.12s ease-in-out 0s;
+    z-index: 10;
+}
+
+.dct-checkbox span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #a0090b;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.12s ease-in-out 0s;
+    -moz-transition: all 0.12s ease-in-out 0s;
+    transition: all 0.12s ease-in-out 0s;
+}
+
+.dct-checkbox.checked span{
+    background-image: url("images/general/icon-tick.png");
+}
+
+.no-touch a:hover .dct-checkbox{
+    border: 0px solid rgba(255,255,255,0);
+}
+
+.no-touch a:hover .dct-checkbox.checked span,
+.no-js a:hover .dct-checkbox.checked span{
+    background-image: url("images/general/icon-cross.png");
+}
+
+
+.brand-list{
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.brand-list li{
+    display: inline-block;
+    text-align: center;
+    margin: 2% 2.5% 0;
+    height: 100px;
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+
+.brand-list li a{
+    color: #ccc;
+}
+
+
+.brand-list li img{
+    display: inline-block;
+    position: relative;
+    -webkit-transition: all 0.12s ease-in-out 0s;
+    -moz-transition: all 0.12s ease-in-out 0s;
+    transition: all 0.12s ease-in-out 0s;
+}
+
+.brand-list li span{
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.12s ease-in-out 0s;
+    -moz-transition: all 0.12s ease-in-out 0s;
+    transition: all 0.12s ease-in-out 0s;
+}
+
+.no-touch .brand-list li a:hover,
+.no-js .brand-list li a:hover{
+    color: #fff;
+}
+
+.no-touch .brand-list li a:hover img,
+.no-js .brand-list li a:hover img{
+    color: #fff;
+    top: -2px;
+}
+
+.no-touch .brand-list li a:hover span,
+.no-js .brand-list li a:hover span{
+    bottom: -2px;
+    opacity: 1;
+}
+
 
 .header-container{
 	background-color: #000;
@@ -230,7 +354,7 @@ p{ line-height: 18px;}
 }
 
 .image-frame{
-    border: 5px solid rgba(255,255,255,0.2);
+    border: 5px solid rgba(255,255,255,.2);
     display: block;
     position: relative;
     color: #fff;
@@ -246,6 +370,25 @@ p{ line-height: 18px;}
 .image-frame img{
     width: 100%;
     display: block;
+}
+
+
+
+.lg-screen{display: none}
+
+.default-dropdown{
+    background-color: rgba(0,0,0,.7);
+    border: 0;
+    color: #ccc;
+    padding: 10px;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    width: 100%;
+}
+
+.default-dropdown option{
+    background-color: #000;
 }
 
 .footer-container{

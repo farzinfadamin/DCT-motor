@@ -102,44 +102,11 @@
     .banner-wrapper{
         margin-bottom: 0;
     }
-    .main > header{
-        position: relative;
-        width: 100%;
+
+
+    .line-title,
+    .main > .line-title{
         display: inline-block;
-        padding: 30px 0;
-    }
-
-    .main > header:before{
-        border-top: 1px solid #444;
-        height: 1px;
-        width: 100%;
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-    }
-
-    .main > header > *{
-        background: url("images/general/bg.png") repeat left top;
-        position: relative;
-        z-index: 1;
-    }
-
-    .main > header h2{
-        padding-right: 20px;
-        float: left;
-        margin: 0;
-    }
-
-    .main > header .breadcrumb{
-        padding-left: 10px;
-        float: right;
-        font-size: 13px;
-        color: #888;
-    }
-
-    .main > header .breadcrumb a{
-        color: #fff;
     }
 
 
@@ -408,6 +375,18 @@
         text-align: left;
     }
 
+    .filter-col > *{
+        margin-bottom: 18px;
+    }
+
+    .filter-col .line-title{
+        padding: 12px 0;
+    }
+
+    .filter-col .line-title *[class *="icon-"]{
+        background-size: 24px 24px;
+    }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -423,7 +402,7 @@
         margin: 0;
     }
 
-    .product-choose-brand > aside{
+    .cat-list-col{
         border-right: 1px solid #444;
     }
 

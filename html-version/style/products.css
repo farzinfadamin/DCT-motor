@@ -114,7 +114,6 @@
 }
 
 .brand-make figcaption img{
-	max-width: 100%;
 	max-height: 100%;
 }
 
@@ -132,4 +131,82 @@
 
 .brand-make-select > section h4{
 	margin-bottom: 5px;
+}
+
+.filter-products a{
+	margin-bottom: 5px;
+	display: block;
+	background-color: #000;
+	padding: 5px 10px;
+	color: #ccc;
+	position: relative;
+	opacity: .5;
+}
+
+.filter-products a.checked:before,
+.no-touch .filter-products a:hover:before,
+.no-js .filter-products a:hover:before{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: url("images/general/icon-tick-black.png") no-repeat right top #a0090b;
+	content: "";
+	background-size: 16px 16px;
+	width: 18px;
+	height: 18px;
+	border-radius: 50% 50%;
+	-webkit-transition: all 0.12s ease-in-out 0s;
+	-moz-transition: all 0.12s ease-in-out 0s;
+	transition: all 0.12s ease-in-out 0s;
+}
+
+.filter-products a.checked:hover:before{
+	background-image: url("images/general/icon-cross-black.png");
+	background-color: #ccc;
+	background-position: center center;
+}
+
+.no-touch .filter-products a:hover,
+.no-js .filter-products a:hover,
+.filter-products a.checked{
+	opacity: 1;
+}
+
+.filter-products a span{
+	background-size: 16px 16px;
+	padding-left: 24px;
+}
+
+.product-list-container{
+	margin-bottom: 20px;
+}
+
+.side-box .dropdown-container{
+	margin-bottom: 5px;
+}
+
+.side-box .dropdown-container a{
+	padding: 5px 10px;
+}
+
+.side-box .dropdown-container img,
+.side-box .dropdown-container *[class *="icon-"]{
+	background-size: 16px 16px;
+	max-width: 16px;
+	max-height: 16px;
+	display: inline;
+}
+
+.side-box .dropdown-container img{
+	margin-right: 10px;
+}
+
+.side-box .dropdown-container *[class *="icon-"]{
+	padding-left: 26px;
+}
+
+.side-box *[class *="btn"]{
+	display: block;
+	text-align: center;
+	margin-top: 20px;
 }

@@ -1,0 +1,36 @@
+/* =============
+   FAQ
+   ============= */
+
+.faq-container{
+	margin-bottom: 40px;
+}
+
+.faq-list li{
+	margin-bottom: 5px;
+}
+
+.faq-list li > a{
+	padding: 5px 10px 5px 25px;
+	font-size: 15px;
+	background: url("images/general/arrow-left-white.png") no-repeat 10px 12px rgba(0,0,0,.6);
+	color: #fff;
+	display: block;
+}
+
+.lt-ie9 .faq-list li > a{
+	background-color: #000;
+}
+
+.no-touch .faq-list li > a:hover,
+.faq-list li.active > a{
+	background-image: url("images/general/arrow-down-white.png"); 
+	background-color: #000;
+	padding-left: 35px;
+}
+
+.faq-list li > p{
+	display: none;
+	line-height: 22px;
+	padding: 0 25px;
+}

@@ -4,22 +4,41 @@
 
 @media only screen and (min-width: 768px) {
 
-    .sm-screen{display: none}
+    .sm-screen{display: none;}
     .lg-screen{display: block;}
+
+    .hour-box{
+        padding: 0 10%;
+    }
 
     .header-container{
         height: initial;
+		-moz-height: initial;
         opacity: 0.95;
         width: 100%;
         z-index: 100;
     }
+	
+	.ie .header-container{
+        height: auto;
+    }
+	
     .header-container hgroup{
         position: initial;
+		-moz-position: initial;
         left: initial;
+        -moz-left: initial;
         top: initial;
+        -moz-top: initial;
         width: 250px;
         margin: 0;
         float: left;
+    }
+	
+	.ie .header-container hgroup{
+        position: auto;
+        left: auto;
+        top: auto;
     }
 
     .inner-page .header-container .logo{
@@ -73,6 +92,8 @@
     .main-nav a{
         color: #ccc;
         text-transform: uppercase;
+        border-bottom: 0;
+        padding-bottom: 20px;
     }
 
     .no-touch .main-nav a:hover,
@@ -105,7 +126,7 @@
 
 
     .line-title,
-    .main > .line-title{
+    .dct-content > .line-title{
         display: inline-block;
     }
 
@@ -120,6 +141,7 @@
         float: right;
         margin-top: 20px;
         display: block;
+        clear: none;
     }
 
     .products-cat-list .overlay-box span[class *="icon-"]{
@@ -132,10 +154,6 @@
         font-size: 20px;
         margin: 5px 0 10px;
         font-weight: 400;
-    }
-
-    .products-cat-list .overlay-box p{
-        display: none;
     }
 
     .product-list h4 {
@@ -172,6 +190,18 @@
         bottom: 2px;
         opacity: 1;
     }
+	
+	.testimonial-list section{
+		top: initial;
+		-moz-top: initial;
+		margin-bottom: initial;
+		-moz-margin-bottom: initial;
+	}
+	
+	.ie .testimonial-list section{
+		top: auto;
+		margin-bottom: auto;
+	}
 
     .footer-links{ display: block;}
     .address-box .social-links{display: none;}
@@ -183,12 +213,20 @@
     .copyright .left{float: left;}
 
     .testimonial-list > div{padding-top: 0;}
+	
     .testimonial-list section{
         text-align: left;
         position: relative;
         top: initial;
+        -moz-top: initial;
         margin-bottom: initial;
+        -moz-margin-bottom: initial;
         padding-left: 70px;
+    }
+	
+	.ie .testimonial-list section{
+        top: auto;
+        margin-bottom: auto;
     }
 
     .testimonial-list .even-box section{
@@ -208,14 +246,24 @@
 
     .testimonial-list .even-box figure{
         left: initial;
+        -moz-left: initial;
         right: 0;
+    }
+	
+	.ie .testimonial-list .even-box figure{
+        left: auto;
     }
 
     .testimonial-list aside {
         position: relative;
         top: initial;
+        -moz-top: initial;
         padding: 20px 20px 20px 75px;
         height: 200px;
+    }
+	
+	.ie .testimonial-list aside {
+        top: auto;
     }
 
     .testimonial-list .even-box aside {
@@ -281,10 +329,14 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background: url("images/general/icon-plus.png") no-repeat center center rgba(0,0,0,.9);
+        background: url("images/general/icon-plus.png") no-repeat center center rgba(0,0,0,.8);
         -webkit-transition: all 0.12s ease-in-out 0s;
         -moz-transition: all 0.12s ease-in-out 0s;
         transition: all 0.12s ease-in-out 0s;
+    }
+
+    .lt-ie9 .thumbs-list a:before{
+        background: url("images/general/overlay-black-80.png") repeat transparent;
     }
 
     .no-touch .thumbs-list a:hover:before,
@@ -317,18 +369,23 @@
     }
 
     .dropdown-container > a{
-        background: url("images/general/arrow-down-gray.png") no-repeat right center rgba(0,0,0,.7);
+        background: url("images/general/arrow-down-gray.png") no-repeat right center rgba(0,0,0,.8);
         background-origin: content-box;
         color: #ccc;
-        padding: 10px;
+        padding: 5px 10px;
         display: block;
         text-align: left;
         font-size: 14px;
     }
 
+    .lt-ie9 .dropdown-container > a{
+        background: url("images/general/overlay-black-80.png") repeat transparent;
+    }
+
+
     .no-touch .dropdown-container > a:hover,
     .no-js .dropdown-container > a:hover{
-        background-color: rgba(0,0,0,1);
+        background: #000;
         color: #fff;
     }
 
@@ -350,8 +407,13 @@
     }
 
     .dropdown-container.right-aligned > ul{
-        left: inherit;
+        left: initial;
+        -moz-left: initial;
         right: 0;
+    }
+	
+	.ie .dropdown-container.right-aligned > ul{
+        left: auto;
     }
 
     .dropdown-container > ul li{
@@ -383,8 +445,33 @@
         padding: 12px 0;
     }
 
-    .filter-col .line-title *[class *="icon-"]{
+    .filter-col .line-title [class *=" icon-"],
+    .filter-col .line-title [class ^="icon-"]{
         background-size: 24px 24px;
+    }
+
+
+    /*=======================
+      Contact
+    ========================*/
+    .fri-sat .hour-tooltip{
+        bottom: initial;
+        -moz-bottom: initial;
+    }
+	
+	.ie .fri-sat .hour-tooltip{
+        bottom: auto;
+    }
+
+    .fri-sat .hour-tooltip:before{
+        top: initial;
+        -moz-top: initial;
+        bottom: -6px;
+        border-color: #a0090b transparent transparent transparent;
+    }
+	
+	.ie .fri-sat .hour-tooltip:before{
+        top: auto;
     }
 
 }
@@ -394,6 +481,11 @@
 	.footer-links section{float: left;}
     .address-box address,
     .address-box .contact-links a{font-size: 12px;}
+
+
+    a[class *="btn"]{
+        display: inline-block;
+    }
 
     /* ====================
         Products Page
@@ -431,6 +523,10 @@
         width: 40px;
         height: 40px;
     }
+
+    .products-cat-list .overlay-box p{
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -439,7 +535,8 @@
 		margin: 0 auto;
 	}
 
-    .products-cat-list .overlay-box span[class *="icon-"]{
+    .products-cat-list .overlay-box span[class *=" icon-"],
+    .products-cat-list .overlay-box span[class ^="icon-"]{
         background-size: 60px 60px;
         width: 60px;
         height: 60px;

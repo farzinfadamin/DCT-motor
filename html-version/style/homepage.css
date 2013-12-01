@@ -44,6 +44,10 @@
 	padding: 15px;
 }
 
+.lt-ie9 .slide-details{
+	background: url("images/general/overlay-black-80.png") repeat transparent;
+}
+
 .slide-details h2{color: #fff;}
 
 .slide-details .btn-more{
@@ -67,6 +71,10 @@
 	width: 100%;
 }
 
+.lt-ie9 .slideshow .loadbar{
+	background: url("images/general/overlay-20.png") repeat transparent;
+}
+
 .loadbar span{
 	height: 3px;
 	background-color: #a0090b;
@@ -78,90 +86,20 @@
 	text-align: center;
 }
 
-.main > * {
+.dct-content > * {
 	margin-bottom: 20px;
 	display: block;
-}
-
-.dct-box header a{
-    display: none;
 }
 
 .welcome-box{
 	padding: 20px 0;
 	max-width: 800px;
 	margin: 0 auto;
-}
-
-.welcome-box h2{
-	text-align: center !important;
+	text-align: center;
 }
 
 .welcome-box p{
 	line-height: 20px;
-}
-
-.products-cat-list > div{
-	margin-bottom: 15px;
-	padding: 0 10px;
-}
-
-.products-cat-list section{
-	cursor: pointer;
-}
-
-
-.products-cat-list figcaption{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	text-align: center;
-	background-color: rgba(0,0,0,0.8);
-	-webkit-transition: all 0.2s ease-in-out 0s;
-	-moz-transition: all 0.2s ease-in-out 0s;
-	transition: all 0.2s ease-in-out 0s;
-}
-
-.products-cat-list figcaption span{
-	padding-top: 3%;
-	padding-bottom: 3%;
-	display: inline-block;
-	line-height: 24px;
-	font-size: 110%;
-	color: #fff;
-}
-
-.products-cat-list .overlay-box{
-	background-color: rgba(0,0,0,0.8);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	bottom: -100%;
-	padding: 10px;
-	-webkit-transition: all 0.2s ease-in-out 0s;
-	-moz-transition: all 0.2s ease-in-out 0s;
-	transition: all 0.2s ease-in-out 0s;
-}
-
-.products-cat-list .overlay-box span[class *="icon-"]{
-	display: inline-block;
-	background-size: 60px 60px;
-	width: 60px;
-	height: 60px;
-}
-
-.products-cat-list .overlay-box h4{
-	font-size: 20px;
-	margin: 5px 0;
-	font-weight: 400;
-}
-
-.products-cat-list .overlay-box p{
-	margin-top: 0;
-	font-size: 12px;
-	color: #ccc;
 }
 
 
@@ -184,7 +122,7 @@
 	display: inline-block;
 	width: 100px;
 	height: 100px;
-	border: 5px solid rgba(255,255,255,0.2);
+	border: 5px solid rgba(255,255,255,.2);
 	overflow: hidden;
 	background-color: #111;
 	-webkit-border-radius: 50%;
@@ -192,13 +130,22 @@
 	border-radius: 50%;
 }
 
+.lt-ie9 .testimonial-list figure{
+	padding: 5px;
+	background: url("images/general/overlay-white-20.png") repeat transparent;
+}
+
 .testimonial-list img{
 	width: 100%;
 }
 
 .testimonial-list aside{
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,.8);
 	padding: 60px 20px 20px;
+}
+
+.lt-ie9 .testimonial-list aside{
+	background: url("images/general/overlay-black-80.png") repeat transparent;
 }
 
 .testimonial-list name{

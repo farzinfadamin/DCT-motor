@@ -1,0 +1,235 @@
+/* =============
+   Contacts
+   ============= */
+
+.hour-box{
+	margin-bottom: 40px;
+	padding: 0 6%;
+}
+
+.fig-hour{
+	background: url("images/contact/fig-clock.png") no-repeat;
+	width: 76px;
+	height: 76px;
+	float: left;
+	position: relative;
+	z-index: 2;
+}
+
+.hour-box ul{
+	position: relative;
+	width: 100%;
+	height: 80px;
+	padding-left: 106px;
+}
+
+.hour-box ul:before{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -1px;
+	height: 2px;
+	width: 100%;
+	content: "";
+	background-color: #444;
+}
+
+.hour-box ul li{
+	float: left;
+	height: 80px;
+	position: relative;
+}
+
+.hour-box ul li:before{
+	border-right: 2px solid #fff;
+	width: 100%;
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 50%;
+	margin-top: -5px;
+	height: 10px;
+}
+
+.hour-box ul li.mon-fri{
+	width: 50%;
+}
+
+.hour-box ul li.mon-fri:before{
+	border-left: 2px solid #fff;
+}
+
+.hour-box ul li.fri-sat,
+.hour-box ul li.sat-sun{
+	width: 25%;
+}
+
+.hour-box ul label{
+	position: absolute;
+	right: 0;
+	top: 45px;
+	width: 30px;
+	margin-right: -15px;
+	font-size: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #fff;
+}
+
+.hour-box ul label.align-left{
+	right: initial;
+	-moz-right: initial;
+	left: 0;
+	margin-right: initial;
+	-moz-margin-right: initial;
+	margin-left: -15px;
+}
+
+.hour-tooltip{
+	background-color: #a0090b;
+	position: relative;
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+	text-align: center;
+	display: inline-block;
+	width: 130px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-right: -65px;
+}
+
+.hour-tooltip:before{
+	position: absolute;
+	left: 50%;
+	bottom: -6px;
+	margin-left: -4px;
+	border-color: #a0090b transparent transparent transparent;
+	border-style: solid;
+	content: "";
+	width: 8px;
+	display: block;
+}
+
+.sat-sun .hour-tooltip{
+	width: 70px;
+	margin-right: -35px;
+}
+
+.mon-fri .hour-tooltip{
+	right: initial;
+	-moz-right: initial;
+	left: 50%;
+	margin-right: initial;
+	-moz-margin-right: initial;
+	margin-left: -65px;
+}
+
+.fri-sat .hour-tooltip{
+	top: initial;
+	-moz-top: initial;
+	bottom: -20px;
+}
+
+.fri-sat .hour-tooltip:before{
+	top: -6px;
+	bottom: initial;
+	-moz-bottom: initial;
+	border-color: transparent transparent #a0090b transparent;
+}
+
+.form-container{
+	margin-bottom: 30px;
+}
+
+.contact-form > div{
+	margin-bottom: 10px;
+}
+
+.contact-form > div.btn-container{
+	text-align: right;
+}
+
+.contact-form label{
+	display: block;
+	margin-bottom: 3px;
+}
+
+.contact-form input,
+.contact-form textarea{
+	display: block;
+	background-color: #333;
+	border: 0;
+	width: 100%;
+	padding: 8px;
+	color: #ccc;
+	-webkit-transition: all 0.15s ease-in-out 0s;
+	-moz-transition: all 0.15s ease-in-out 0s;
+	transition: all 0.15s ease-in-out 0s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+	background-color: #111;
+	color: #fff;
+	outline: 1px solid #333;
+}
+
+.map-container{
+	background-color: rgba(0,0,0,.8);
+	display: block;
+	position: relative;
+	color: #fff;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+.lt-ie9 .map-container{
+	background: url("images/general/overlay-black-80.png") repeat transparent;
+}
+
+.google-map img{
+	width: 100%;
+	height: initial;
+	-moz-height: initial;
+}
+
+.address-container{
+	text-align: center;
+	padding-top: 10px;
+}
+
+.address-container > *{
+	margin: 5px 0;
+	display: block;
+}
+
+.address-container address{
+	font-style: normal;
+}
+
+.address-container .contact-links a{
+	color: #fff;
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.address-container .social-links{
+	margin-top: 20px;
+}
+
+.address-container .social-links a{
+	background-size: 24px 24px;
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	margin: 0 10px;
+	display: inline-block;
+}
+
+.no-touch .address-container .social-links a:hover,
+.no-js .address-container .social-links a:hover{
+	opacity: .7;
+}

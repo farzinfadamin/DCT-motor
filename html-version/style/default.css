@@ -1,5 +1,5 @@
 /* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   HTML5 Boilerplate styles - h5bp.com (generated via inheritizr.com)
    ========================================================================== */
 
 html,
@@ -64,8 +64,8 @@ textarea {
 }
 
 
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+/* ===== inheritizr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/inheritizr/responsive-template
    ========================================================================== */
 
 body {
@@ -84,7 +84,6 @@ ul{
 .wrapper {
     width: 96%;
     margin: 0 2%;
-    position: relative;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -103,9 +102,9 @@ b{
 
 a,
 a:link{
-	-webkit-transition: all 0.12s ease-in-out 0s;
-	-moz-transition: all 0.12s ease-in-out 0s;
-	transition: all 0.12s ease-in-out 0s;
+	-webkit-transition: all 0.15s ease-in-out 0s;
+	-moz-transition: all 0.15s ease-in-out 0s;
+	transition: all 0.15s ease-in-out 0s;
 }
 
 a, a:link{ text-decoration: none; }
@@ -113,52 +112,54 @@ a, a:link{ text-decoration: none; }
 h2 {font-size: 25px;}
 h3 {font-size: 20px;}
 
-p{ line-height: 18px;}
+p{ line-height: 23px;}
 
 *[data-href]{
     cursor: pointer;
 }
 
-*[class *="btn"]{
+a[class *="btn"]{
 	background-color: #a0090b;
 	color: #fff;
-	text-align: left;
+	text-align: center;
 	padding: 3px 15px 3px 15px;
-	display: inline-block;
+	display: block;
+    clear: both;
 }
 
-.btn-more{
+a.btn-more{
+    text-align: left;
     padding: 1px 30px 1px 15px;
 	background: url("images/general/arrow-small-right.png") no-repeat right 0 #a0090b;
 }
 
-.btn-large{
+a.btn-large{
     padding: 5px 40px;
     font-size: 20px;
 }
 
 
-.no-touch *[class *="btn"]:hover,
-.no-js *[class *="btn"]:hover{
+.no-touch a[class *="btn"]:hover{
     background-color: #fff;
     color: #a0090b;
 }
 
-.no-touch .btn-more:hover,
-.no-js .btn-more:hover{
+.no-touch a.btn-more:hover,
+.no-js a.btn-more:hover{
     background-position: right -28px;
 }
 
 
-*[class *="icon-"]{
+[class *=" icon-"],
+[class ^="icon-"]{
 	padding-left: 30px;
 	background-size: 24px 24px;
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-color: transparent;
 }
 
-span[class *="icon-"]{
+span[class *=" icon-"],
+span[class ^="icon-"]{
     display: inline-block;
 }
 
@@ -179,8 +180,7 @@ span[class *="icon-"]{
 
 
 .dct-checkbox{
-    border: 3px solid rgba(255,255,255,0.2);
-    background-color: transparent;
+    border: 3px solid rgba(255,255,255,.2);
     padding: 3px;
     position: absolute;
     top: 50%;
@@ -191,10 +191,15 @@ span[class *="icon-"]{
     border-radius: 50%;
     width: 32px;
     height: 32px;
-    -webkit-transition: all 0.12s ease-in-out 0s;
-    -moz-transition: all 0.12s ease-in-out 0s;
-    transition: all 0.12s ease-in-out 0s;
+    -webkit-transition: all 0.15s ease-in-out 0s;
+    -moz-transition: all 0.15s ease-in-out 0s;
+    transition: all 0.15s ease-in-out 0s;
     z-index: 10;
+}
+
+.lt-ie9 .dct-checkbox{
+    padding: 3px;
+    background: url("images/general/overlay-white-20.png") repeat transparent;
 }
 
 .dct-checkbox span{
@@ -208,9 +213,9 @@ span[class *="icon-"]{
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    -webkit-transition: all 0.12s ease-in-out 0s;
-    -moz-transition: all 0.12s ease-in-out 0s;
-    transition: all 0.12s ease-in-out 0s;
+    -webkit-transition: all 0.15s ease-in-out 0s;
+    -moz-transition: all 0.15s ease-in-out 0s;
+    transition: all 0.15s ease-in-out 0s;
 }
 
 .dct-checkbox.checked span{
@@ -218,7 +223,7 @@ span[class *="icon-"]{
 }
 
 .no-touch a:hover .dct-checkbox{
-    border: 0px solid rgba(255,255,255,0);
+    border: 0px;
 }
 
 .no-touch a:hover .dct-checkbox.checked span,
@@ -226,13 +231,20 @@ span[class *="icon-"]{
     background-image: url("images/general/icon-cross.png");
 }
 
+.dct-box header a{
+    display: none;
+}
 
 .brand-list{
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,.8);
     padding: 15px;
     display: inline-block;
     width: 100%;
     text-align: left;
+}
+
+.lt-ie9 .brand-list{
+    background: url("images/general/overlay-black-80.png") repeat transparent;
 }
 
 .brand-list li{
@@ -253,17 +265,17 @@ span[class *="icon-"]{
 .brand-list li img{
     display: inline-block;
     position: relative;
-    -webkit-transition: all 0.12s ease-in-out 0s;
-    -moz-transition: all 0.12s ease-in-out 0s;
-    transition: all 0.12s ease-in-out 0s;
+    -webkit-transition: all 0.15s ease-in-out 0s;
+    -moz-transition: all 0.15s ease-in-out 0s;
+    transition: all 0.15s ease-in-out 0s;
 }
 
 .brand-list li span{
     display: block;
     position: relative;
-    -webkit-transition: all 0.12s ease-in-out 0s;
-    -moz-transition: all 0.12s ease-in-out 0s;
-    transition: all 0.12s ease-in-out 0s;
+    -webkit-transition: all 0.15s ease-in-out 0s;
+    -moz-transition: all 0.15s ease-in-out 0s;
+    transition: all 0.15s ease-in-out 0s;
 }
 
 .no-touch .brand-list li a:hover,
@@ -281,6 +293,80 @@ span[class *="icon-"]{
 .no-js .brand-list li a:hover span{
     bottom: -2px;
     opacity: 1;
+}
+
+.products-cat-list > div{
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.products-cat-list section{
+    cursor: pointer;
+}
+
+
+.products-cat-list figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,.8);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.lt-ie9 .products-cat-list figcaption{
+    background: url("images/general/overlay-black-80.png") repeat transparent;
+}
+
+.products-cat-list figcaption span{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: inline-block;
+    line-height: 24px;
+    font-size: 110%;
+    color: #fff;
+}
+
+.products-cat-list .overlay-box{
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    padding: 10px;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+    text-align: center;
+}
+
+.lt-ie9 .products-cat-list .overlay-box{
+    background: url("images/general/overlay-black-80.png") repeat transparent;
+}
+
+.products-cat-list .overlay-box span[class *="icon-"]{
+    display: inline-block;
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+}
+
+.products-cat-list .overlay-box h4{
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+.products-cat-list .overlay-box p{
+    margin-top: 0;
+    font-size: 12px;
+    color: #ccc;
+    display: none;
+    line-height: 18px;
 }
 
 
@@ -324,10 +410,6 @@ span[class *="icon-"]{
     line-height: 18px;
 }
 
-.result-page .header-container hgroup{
-    top: -5px;
-}
-
 .result-page .header-container hgroup h1{
     line-height: 18px;
 }
@@ -345,17 +427,17 @@ span[class *="icon-"]{
 
 .menu-anchor{
 	float: left;
-	background: url("images/general/icon-menu.png") no-repeat transparent;
+	background: url("images/general/icon-menu.png") no-repeat;
 }
 
 .contact-anchor{
 	float: right;
-	background: url("images/general/icon-tel.png") no-repeat transparent;
+	background: url("images/general/icon-tel.png") no-repeat;
 }
 
 .filter-anchor{
     float: right;
-    background: url("images/general/icon-filter.png") no-repeat transparent;
+    background: url("images/general/icon-filter.png") no-repeat;
 }
 
 .header-container header > aside{display: none;}
@@ -372,13 +454,22 @@ span[class *="icon-"]{
     height: auto;
 }
 
+
+.banner-wrapper .wrapper {
+    position: relative;
+}
+
 .banner-wrapper .banner-details{
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,.8);
     position: absolute;
     bottom: 10px;
     left: 0;
     width: 300px;
     padding: 15px;
+}
+
+.lt-ie9 .banner-wrapper .banner-details{
+    background: url("images/general/overlay-black-80.png") repeat transparent;
 }
 
 .banner-details img{
@@ -397,7 +488,7 @@ span[class *="icon-"]{
 }
 
     .line-title,
-    .main > .line-title{
+    .dct-content > .line-title{
         display: none;
         position: relative;
         width: 100%;
@@ -448,7 +539,7 @@ span[class *="icon-"]{
         color: #fff;
     }
 
-    .line-title *[class *="btn"]{
+    .line-title [class *="btn"]{
         float: right;
     }
 
@@ -458,6 +549,10 @@ span[class *="icon-"]{
     position: relative;
     color: #fff;
     overflow: hidden;
+}
+
+.lt-ie9 .image-frame{
+    background: url("images/general/overlay-white-20.png") repeat transparent;
 }
 
 .image-frame figure{
@@ -476,7 +571,7 @@ span[class *="icon-"]{
 .lg-screen{display: none}
 
 .default-dropdown{
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.8);
     border: 0;
     color: #ccc;
     padding: 10px;
@@ -486,8 +581,16 @@ span[class *="icon-"]{
     width: 100%;
 }
 
+.lt-ie9 .default-dropdown{
+    background: url("images/general/overlay-black-80.png") repeat transparent;
+}
+
 .default-dropdown option{
     background-color: #000;
+}
+
+.lt-ie9 .default-dropdown [selected ^="selected"]{
+    background: none;
 }
 
 .footer-container{
@@ -539,7 +642,6 @@ span[class *="icon-"]{
     padding: 5px 10px 5px 20px;
     display: inline-block;
     background-repeat: no-repeat;
-    background-color: transparent;
     background-position: left center;
 }
 
@@ -551,7 +653,6 @@ span[class *="icon-"]{
 .address-box .social-links a{
     display: inline-block;
     background-repeat: no-repeat;
-    background-color: transparent;
     background-position: left center;
     background-size: 32px 32px;
     width: 32px;
@@ -600,18 +701,23 @@ span[class *="icon-"]{
 }
 
 .product-list .overlay-box{
-    background-color: rgba(0,0,0,0.8);
-    width: 100%;
-    height: 100%;
     position: absolute;
     left: 0;
     bottom: -100%;
+	z-index: 10;
     padding: 10px;
+	width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
     -webkit-transition: all 0.2s ease-in-out 0s;
     -moz-transition: all 0.2s ease-in-out 0s;
     transition: all 0.2s ease-in-out 0s;
+    text-align: center;
 }
 
+.lt-ie9 .product-list .overlay-box{
+    background: url("images/general/overlay-black-80.png") repeat transparent;
+}
 
 .no-touch .products-cat-list section:hover figcaption,
 .no-js .products-cat-list section:hover figcaption{
@@ -654,8 +760,12 @@ span[class *="icon-"]{
 .product-list .see-more span{
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.8);
     content: "";
+}
+
+.lt-ie9 .product-list .see-more span{
+    background: url("images/general/overlay-black-80.png") repeat transparent;
 }
 
 .footer-links{
@@ -694,14 +804,18 @@ span[class *="icon-"]{
     border-left: 2px solid #a0090b;
 }
 
-.footer-links section [class *="icon-"]{
+.footer-links section [class *=" icon-"],
+.footer-links section [class ^="icon-"]{
     background-size: 16px 16px;
     padding-left: 24px;
 }
 
-.no-touch .footer-links section [class *="icon-"]:hover,
-.no-js .footer-links section [class *="icon-"]:hover,
-.footer-links section [class *="icon-"].active{
+.no-touch .footer-links section [class *=" icon-"]:hover,
+.no-touch .footer-links section [class ^="icon-"]:hover,
+.no-js .footer-links section [class *=" icon-"]:hover,
+.no-js .footer-links section [class ^="icon-"]:hover,
+.footer-links section [class *=" icon-"].active,
+.footer-links section [class ^="icon-"].active{
     padding-left: 28px;
     background-position: 5px center;
 }

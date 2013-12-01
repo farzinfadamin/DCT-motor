@@ -25,5 +25,10 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
 $(document).ready(function(){	
 	$('.js-brand-list a').on('mouseenter mouseleave', function(){
 		$(this).parent().siblings('li').toggleClass('dimmed');
-	})
+	});
+
+	$('.js-faq-list li > a').on('click', function(){
+		$(this).parent().toggleClass('active');
+		$(this).next('p').stop().slideToggle(400);
+	});
 });

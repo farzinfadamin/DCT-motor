@@ -66,16 +66,20 @@
 }
 
 .selected-cats-list li a{
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.8);
     display: block;
     position: relative;
     color: #fff;
     padding: 5px;
 }
 
+.lt-ie9 .selected-cats-list li a{
+	background: url("images/general/overlay-black-80.png") repeat transparent;
+}
+
 .no-touch .selected-cats-list li a:hover,
 .no-js .selected-cats-list li a:hover{
-    background-color: rgba(0,0,0,1);
+    background: #000;
 }
 
 .selected-cats-list li figure{

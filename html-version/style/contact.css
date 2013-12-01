@@ -229,7 +229,6 @@
 	display: inline-block;
 }
 
-.no-touch .address-container .social-links a:hover,
-.no-js .address-container .social-links a:hover{
+.no-touch .address-container .social-links a:hover{
 	opacity: .7;
 }

@@ -81,6 +81,17 @@ ul{
 	list-style: none;
 }
 
+.dct-list{
+    margin-left: 20px;
+}
+
+.dct-list li{
+    background: url("images/general/bullet.png") no-repeat left 5px;
+    padding-left: 20px;
+    background-size: 12px 12px;
+    margin-bottom: 5px;
+}
+
 .wrapper {
     width: 96%;
     margin: 0 2%;
@@ -144,14 +155,13 @@ a.btn-large{
     color: #a0090b;
 }
 
-.no-touch a.btn-more:hover,
-.no-js a.btn-more:hover{
+.no-touch a.btn-more:hover{
     background-position: right -28px;
 }
 
 
-[class *=" icon-"],
-[class ^="icon-"]{
+*[class *=" icon-"],
+*[class ^="icon-"]{
 	padding-left: 30px;
 	background-size: 24px 24px;
 	background-repeat: no-repeat;
@@ -163,20 +173,24 @@ span[class ^="icon-"]{
     display: inline-block;
 }
 
-.icon-steeringwheels{ background-image: url("images/general/icon-steeringwheels.png"); }
-.icon-interioraccessories{ background-image: url("images/general/icon-interioraccessories.png"); }
-.icon-exteriorkits{ background-image: url("images/general/icon-exteriorkits.png"); }
-.icon-products{ background-image: url("images/general/icon-products.png"); }
-.icon-carbrand{ background-image: url("images/general/icon-carbrand.png"); }
-.icon-carmake{ background-image: url("images/general/icon-carmake.png"); }
-.icon-caryear{ background-image: url("images/general/icon-caryear.png"); }
-.icon-home{ background-image: url("images/general/icon-home.png"); }
-.icon-tel{ background-image: url("images/general/icon-tel.png"); }
-.icon-email{ background-image: url("images/general/icon-email.png"); }
-.icon-facebook{ background-image: url("images/general/icon-facebook.png"); }
-.icon-twitter{ background-image: url("images/general/icon-twitter.png"); }
-.icon-youtube{ background-image: url("images/general/icon-youtube.png"); }
-.icon-instagram{ background-image: url("images/general/icon-instagram.png"); }
+.icon-steeringwheels{ background-image: url("images/general/icon-steeringwheels-white.png"); }
+.icon-interioraccessories{ background-image: url("images/general/icon-interioraccessories-white.png"); }
+.icon-exteriorkits{ background-image: url("images/general/icon-exteriorkits-white.png"); }
+.icon-products{ background-image: url("images/general/icon-products-white.png"); }
+.icon-carbrand{ background-image: url("images/general/icon-carbrand-white.png"); }
+.icon-carmake{ background-image: url("images/general/icon-carmake-white.png"); }
+.icon-caryear{ background-image: url("images/general/icon-caryear-white.png"); }
+.icon-home{ background-image: url("images/general/icon-home-white.png"); }
+.icon-tel{ background-image: url("images/general/icon-tel-white.png"); }
+.icon-email{ background-image: url("images/general/icon-email-white.png"); }
+.icon-facebook{ background-image: url("images/general/icon-facebook-white.png"); }
+.icon-twitter{ background-image: url("images/general/icon-twitter-white.png"); }
+.icon-youtube{ background-image: url("images/general/icon-youtube-white.png"); }
+.icon-instagram{ background-image: url("images/general/icon-instagram-white.png"); }
+
+.icon-fb-colored{ background-image: url("images/general/icon-facebook-colored.png"); }
+.icon-tw-colored{ background-image: url("images/general/icon-twitter-colored.png"); }
+.icon-gplus-colored{ background-image: url("images/general/icon-google-colored.png"); }
 
 
 .dct-checkbox{
@@ -219,16 +233,15 @@ span[class ^="icon-"]{
 }
 
 .dct-checkbox.checked span{
-    background-image: url("images/general/icon-tick.png");
+    background-image: url("images/general/icon-tick-white.png");
 }
 
 .no-touch a:hover .dct-checkbox{
     border: 0px;
 }
 
-.no-touch a:hover .dct-checkbox.checked span,
-.no-js a:hover .dct-checkbox.checked span{
-    background-image: url("images/general/icon-cross.png");
+.no-touch a:hover .dct-checkbox.checked span{
+    background-image: url("images/general/icon-cross-white.png");
 }
 
 .dct-box header a{
@@ -278,19 +291,16 @@ span[class ^="icon-"]{
     transition: all 0.15s ease-in-out 0s;
 }
 
-.no-touch .brand-list li a:hover,
-.no-js .brand-list li a:hover{
+.no-touch .brand-list li a:hover{
     color: #fff;
 }
 
-.no-touch .brand-list li a:hover img,
-.no-js .brand-list li a:hover img{
+.no-touch .brand-list li a:hover img{
     color: #fff;
     top: -2px;
 }
 
-.no-touch .brand-list li a:hover span,
-.no-js .brand-list li a:hover span{
+.no-touch .brand-list li a:hover span{
     bottom: -2px;
     opacity: 1;
 }
@@ -410,7 +420,8 @@ span[class ^="icon-"]{
     line-height: 18px;
 }
 
-.result-page .header-container hgroup h1{
+.result-page .header-container hgroup h1,
+.details-page .header-container hgroup h1{
     line-height: 18px;
 }
 
@@ -420,24 +431,23 @@ span[class ^="icon-"]{
 	display: block;
 }
 
-.no-touch .mobile-header-anchors a:hover,
-.no-js .mobile-header-anchors a:hover{
+.no-touch .mobile-header-anchors a:hover{
 	opacity: 0.6;
 }
 
 .menu-anchor{
 	float: left;
-	background: url("images/general/icon-menu.png") no-repeat;
+	background: url("images/general/icon-menu-white.png") no-repeat;
 }
 
 .contact-anchor{
 	float: right;
-	background: url("images/general/icon-tel.png") no-repeat;
+	background: url("images/general/icon-tel-white.png") no-repeat;
 }
 
 .filter-anchor{
     float: right;
-    background: url("images/general/icon-filter.png") no-repeat;
+    background: url("images/general/icon-filter-white.png") no-repeat;
 }
 
 .header-container header > aside{display: none;}
@@ -487,61 +497,65 @@ span[class ^="icon-"]{
     margin: 0;
 }
 
-    .line-title,
-    .dct-content > .line-title{
-        display: none;
-        position: relative;
-        width: 100%;
-        padding: 30px 0;
-    }
+.line-title,
+.dct-content > .line-title{
+    display: none;
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+}
 
-    .result-box .line-title{
-        padding: 15px 0;
-    }
+.result-box .line-title{
+    padding: 15px 0;
+}
 
-    .line-title:before{
-        border-top: 1px solid #444;
-        height: 1px;
-        width: 100%;
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-    }
+.line-title:before{
+    border-top: 1px solid #444;
+    height: 1px;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
 
-    .line-title > *{
-        background: url("images/general/bg.png") repeat left top;
-        position: relative;
-        z-index: 1;
-    }
+.line-title > *{
+    background: url("images/general/bg.png") repeat left top;
+    position: relative;
+    z-index: 1;
+}
 
-    .line-title h2,
-    .line-title h3,
-    .line-title h4,
-    .line-title h5{
-        padding-right: 20px;
-        float: left;
-        margin: 0;
-    }
+.line-title h2,
+.line-title h3,
+.line-title h4,
+.line-title h5{
+    padding-right: 20px;
+    float: left;
+    margin: 0;
+}
 
-    .line-title h5{
-        padding-right: 10px;
-    }
+.line-title .btn-container{
+    padding-left: 20px;
+}
 
-    .line-title .breadcrumb{
-        padding-left: 10px;
-        float: right;
-        font-size: 13px;
-        color: #888;
-    }
+.line-title h5{
+    padding-right: 10px;
+}
 
-    .line-title .breadcrumb a{
-        color: #fff;
-    }
+.line-title .breadcrumb{
+    padding-left: 10px;
+    float: right;
+    font-size: 13px;
+    color: #888;
+}
 
-    .line-title [class *="btn"]{
-        float: right;
-    }
+.line-title .breadcrumb a{
+    color: #fff;
+}
+
+.line-title [class *="btn"]{
+    float: right;
+}
 
 .image-frame{
     border: 5px solid rgba(255,255,255,.2);
@@ -687,8 +701,7 @@ span[class ^="icon-"]{
     transition: all 0.2s ease-in-out 0s;
 }
 
-.no-touch .product-list section:hover .product-price,
-.no-js .product-list section:hover .product-price{
+.no-touch .product-list section:hover .product-price{
     bottom: -32px;
 }
 
@@ -719,18 +732,15 @@ span[class ^="icon-"]{
     background: url("images/general/overlay-black-80.png") repeat transparent;
 }
 
-.no-touch .products-cat-list section:hover figcaption,
-.no-js .products-cat-list section:hover figcaption{
+.no-touch .products-cat-list section:hover figcaption{
     bottom: -100%;
 }
 
-.no-touch .products-cat-list section:hover .overlay-box,
-.no-js .products-cat-list section:hover .overlay-box{
+.no-touch .products-cat-list section:hover .overlay-box{
     bottom: 0;
 }
 
-.no-touch .product-list section:hover .overlay-box,
-.no-js .product-list section:hover .overlay-box{
+.no-touch .product-list section:hover .overlay-box{
     bottom: 0;
 }
 
@@ -797,7 +807,6 @@ span[class ^="icon-"]{
 }
 
 .no-touch .footer-links section a:hover,
-.no-js .footer-links section a:hover,
 .footer-links section a.active{
     color: #fff;
     padding-left: 5px;
@@ -812,8 +821,6 @@ span[class ^="icon-"]{
 
 .no-touch .footer-links section [class *=" icon-"]:hover,
 .no-touch .footer-links section [class ^="icon-"]:hover,
-.no-js .footer-links section [class *=" icon-"]:hover,
-.no-js .footer-links section [class ^="icon-"]:hover,
 .footer-links section [class *=" icon-"].active,
 .footer-links section [class ^="icon-"].active{
     padding-left: 28px;

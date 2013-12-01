@@ -27,12 +27,12 @@
 <!--[if IE]><![endif]-->
 <!--{include file= $settingsTemplate|cat:"meta.tpl.html"}-->
 <!--{include file = $settingsTemplate|cat:"StyleIncludes.tpl.html"}-->
-<script type = "text/javascript" language = "javascript"  src ="<!--{$javascriptLibraryPath}-->modernizr/modernizr-2.6.1.min.js"></script> 
+<script src="<!--{$javascriptLibraryPath}-->modernizr/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 <!--{if $javascriptBottomPage eq false}-->
 <!--{include file = $settingsTemplate|cat:"JavaScriptActionInfo.tpl.html"}-->
 <!--{/if}-->
 </head>
-<body role='document'>
+<body role='document' <!--{if $action neq "homepage"}-->class="inner-page <!--{if $action eq "product-details"}-->details-page<!--{/if}--> <!--{if $action eq "products-3"}-->result-page <!--{/if}--><!--{/if}-->">
 <!--{include file = $includeTemplate|cat:"header.tpl.html"}-->
 
 <!--{if $action eq "homepage"}-->

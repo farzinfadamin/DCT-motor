@@ -12,15 +12,24 @@
 			
 			$siteUrls = array();
 			$siteUrls["homepage"] = LiteFrame::BuildActionUrl( "homepage" );
+			$siteUrls["products"] = LiteFrame::BuildActionUrl( "products" );
+			$siteUrls["products_2"] = LiteFrame::BuildActionUrl( "products-2" );
+			$siteUrls["products_3"] = LiteFrame::BuildActionUrl( "products-3" );
+			$siteUrls["products_details"] = LiteFrame::BuildActionUrl( "products-details" );
+			$siteUrls["about"] = LiteFrame::BuildActionUrl( "about" );
+			$siteUrls["contact"] = LiteFrame::BuildActionUrl( "contact" );
+			$siteUrls["faq"] = LiteFrame::BuildActionUrl( "faq" );
 			
 			$external = array();
 			$external["mexoinc"] = "http://www.mexoinc.com";
-			$external["facebook"] = "https://facebook.com/";
+			$external["facebook"] = "https://www.facebook.com/DCTMotorSports";
 			$external["twitter"] = "https://twitter.com/";
+			$external["youtube"] = "https://youtube.com/";
+			$external["instagram"] = "https://instagram.com/";
 			$external["gmap"] = "";
 			
 			$globalUrls = array();
-			$globalUrls["tel_number"] = "";
+			$globalUrls["tel_number"] = "+1 (408) 802 4500";
 			$globalUrls["fax_number"] = "";
 			$globalUrls["address"] = "8206 Leesburg Pike, Suite 209, Vienna, VA 22182";
 			$globalUrls["email"] = "sales@dctms.com";

@@ -1,0 +1,37 @@
+<div class="header-container">
+            <header class="wrapper clearfix">
+                <hgroup>
+                    <a href="<!--{$SiteData.urls.site.homepage}-->" class="logo">
+                        <img src="<!--{$imagePath}-->general/logo-dctms.png" alt="DCT Motor Sports" />
+                    </a>
+                    <!--{if $action neq "homepage"}-->
+                    <h1><b>Products</b></h1>
+                    <!--{if $action eq "products-3"}--><h2>Steering Wheel ST110T010</h2><!--{/if}-->
+                    <!--{/if}-->
+                </hgroup>
+                <nav class="mobile-header-anchors">
+                    <a href="#" class="menu-anchor"></a>
+                    <a href="#" class="contact-anchor"></a>
+                </nav>
+                <aside>
+                    <div class="top-section">
+                        <a href="tel:<!--{$SiteData.urls.globalUrl.tel_number}-->"><small>Call Us: </small><!--{$SiteData.urls.globalUrl.tel_number}--></a> |
+                        <nav class="social-links">
+                            <a href="<!--{$SiteData.urls.external.facebook}-->" class="icon-facebook"></a>
+                            <a href="<!--{$SiteData.urls.external.twitter}-->" class="icon-twitter"></a>
+                            <a href="<!--{$SiteData.urls.external.youtube}-->" class="icon-youtube"></a>
+                            <a href="<!--{$SiteData.urls.external.instagram}-->" class="icon-instagram"></a>
+                        </nav>
+                    </div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="<!--{$SiteData.urls.site.homepage}-->" class="icon-home <!--{if $action eq "homepage"}-->active<!--{/if}-->"></a></li>
+                            <li><a href="<!--{$SiteData.urls.site.products}-->" <!--{if $action eq "products"}-->class="active"<!--{/if}-->>Products</a></li>
+                            <li><a href="<!--{$SiteData.urls.site.about}-->" <!--{if $action eq "about"}-->class="active"<!--{/if}-->>About</a></li>
+                            <li><a href="<!--{$SiteData.urls.site.contact}-->" <!--{if $action eq "contact"}-->class="active"<!--{/if}-->>Contact Us</a></li>
+                            <li><a href="<!--{$SiteData.urls.site.faq}-->" <!--{if $action eq "faq"}-->class="active"<!--{/if}-->>FAQ</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+            </header>
+        </div>

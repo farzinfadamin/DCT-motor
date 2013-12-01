@@ -1,2 +1,179 @@
-/*   HOMEPAGE PAGE
-=================*/
+/* =============
+   Homepage
+   ============= */
+   
+.slideshow{
+	width: 100%;
+	position: relative;
+}
+
+.slideshow img{
+	width: 100%;
+	height: auto;
+}
+
+.slide-navigator{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.slide-details-anchor{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: 25px;
+	height: 25px;
+	background: url("images/homepage/icon-details-anchor.png") no-repeat transparent;
+}
+
+.slide-details-anchor:active{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.slide-details{
+	display: none;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	background-color: rgba(0,0,0,.8);
+	width: 350px;
+	font-size: 13px;
+	padding: 15px;
+}
+
+.lt-ie9 .slide-details{
+	background: url("images/general/overlay-black-80.png") repeat transparent;
+}
+
+.slide-details h2{color: #fff;}
+
+.slide-details .btn-more{
+	float: right;
+	display: inline;
+}
+
+.slide-details h3{
+	margin: 0;
+}
+
+.slide-details p{
+	margin: 5px 0;
+}
+
+.slideshow .loadbar{
+	position: absolute;
+	bottom: 0;
+	height: 3px;
+	background-color: rgba(0,0,0,.2);
+	width: 100%;
+}
+
+.lt-ie9 .slideshow .loadbar{
+	background: url("images/general/overlay-20.png") repeat transparent;
+}
+
+.loadbar span{
+	height: 3px;
+	background-color: #a0090b;
+	display: block;
+}
+
+
+.main{
+	text-align: center;
+}
+
+.dct-content > * {
+	margin-bottom: 20px;
+	display: block;
+}
+
+.welcome-box{
+	padding: 20px 0;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.welcome-box p{
+	line-height: 20px;
+}
+
+
+.testimonial-list > div{
+	margin-bottom: 15px;
+	padding: 60px 10px 0;
+}
+
+
+.testimonial-list section{
+	text-align: center;
+	position: relative;
+	top: -100px;
+	margin-bottom: -100px;
+}
+
+.testimonial-list figure{
+	position: relative;
+	top: 50px;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border: 5px solid rgba(255,255,255,.2);
+	overflow: hidden;
+	background-color: #111;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.lt-ie9 .testimonial-list figure{
+	padding: 5px;
+	background: url("images/general/overlay-white-20.png") repeat transparent;
+}
+
+.testimonial-list img{
+	width: 100%;
+}
+
+.testimonial-list aside{
+	background-color: rgba(0,0,0,.8);
+	padding: 60px 20px 20px;
+}
+
+.lt-ie9 .testimonial-list aside{
+	background: url("images/general/overlay-black-80.png") repeat transparent;
+}
+
+.testimonial-list name{
+	font-size: 20px;
+	color: #fff;
+}
+
+.testimonial-list time{
+	font-size: 12px;
+	font-style: italic;
+	color: #555;
+	display: block;
+}
+
+.testimonial-list p{
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 20px;
+	margin-bottom: 0;
+	max-height: 120px;
+	overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .header-container{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

@@ -3,17 +3,17 @@
    ============= */
 
 .hour-box{
-	margin-bottom: 40px;
 	padding: 0 6%;
+	margin-bottom: 40px;
 }
 
 .fig-hour{
-	background: url("images/contact/fig-clock.png") no-repeat;
-	width: 76px;
-	height: 76px;
-	float: left;
 	position: relative;
 	z-index: 2;
+	float: left;
+	width: 76px;
+	height: 76px;
+	background: url("images/contact/fig-clock.png") no-repeat;
 }
 
 .hour-box ul{
@@ -25,30 +25,30 @@
 
 .hour-box ul:before{
 	position: absolute;
-	left: 0;
 	top: 50%;
-	margin-top: -1px;
-	height: 2px;
+	left: 0;
 	width: 100%;
-	content: "";
+	height: 2px;
+	margin-top: -1px;
 	background-color: #444;
+	content: "";
 }
 
 .hour-box ul li{
+	position: relative;
 	float: left;
 	height: 80px;
-	position: relative;
 }
 
 .hour-box ul li:before{
+	position: absolute;
+	top: 50%;
+	left: 0;
 	border-right: 2px solid #fff;
 	width: 100%;
-	position: absolute;
-	content: "";
-	left: 0;
-	top: 50%;
-	margin-top: -5px;
 	height: 10px;
+	margin-top: -5px;
+	content: "";
 }
 
 .hour-box ul li.mon-fri{
@@ -66,51 +66,50 @@
 
 .hour-box ul label{
 	position: absolute;
-	right: 0;
 	top: 45px;
+	right: 0;
 	width: 30px;
 	margin-right: -15px;
+	color: #fff;
 	font-size: 12px;
+	font-weight: 400;
 	text-align: center;
 	text-transform: uppercase;
-	font-weight: 400;
-	color: #fff;
 }
 
 .hour-box ul label.align-left{
-	right: initial;
 	-moz-right: initial;
-	left: 0;
+	right: initial;
 	margin-right: initial;
-	-moz-margin-right: initial;
+	left: 0;
 	margin-left: -15px;
+	-moz-margin-right: initial;
 }
 
 .hour-tooltip{
-	background-color: #a0090b;
-	position: relative;
-	color: #fff;
-	font-size: 13px;
-	text-transform: uppercase;
-	text-align: center;
-	display: inline-block;
-	width: 130px;
 	position: absolute;
 	right: 0;
 	top: 0;
+	display: inline-block;
+	width: 130px;
 	margin-right: -65px;
+	background-color: #a0090b;
+	color: #fff;
+	font-size: 13px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .hour-tooltip:before{
 	position: absolute;
-	left: 50%;
 	bottom: -6px;
-	margin-left: -4px;
+	left: 50%;
+	display: block;
 	border-color: #a0090b transparent transparent transparent;
 	border-style: solid;
-	content: "";
+	margin-left: -4px;
 	width: 8px;
-	display: block;
+	content: "";
 }
 
 .sat-sun .hour-tooltip{
@@ -119,24 +118,24 @@
 }
 
 .mon-fri .hour-tooltip{
-	right: initial;
 	-moz-right: initial;
+	right: initial;
 	left: 50%;
-	margin-right: initial;
 	-moz-margin-right: initial;
+	margin-right: initial;
 	margin-left: -65px;
 }
 
 .fri-sat .hour-tooltip{
-	top: initial;
 	-moz-top: initial;
+	top: initial;
 	bottom: -20px;
 }
 
 .fri-sat .hour-tooltip:before{
 	top: -6px;
-	bottom: initial;
 	-moz-bottom: initial;
+	bottom: initial;
 	border-color: transparent transparent #a0090b transparent;
 }
 
@@ -160,10 +159,10 @@
 .contact-form input,
 .contact-form textarea{
 	display: block;
-	background-color: #333;
 	border: 0;
 	width: 100%;
 	padding: 8px;
+	background-color: #333;
 	color: #ccc;
 	-webkit-transition: all 0.15s ease-in-out 0s;
 	-moz-transition: all 0.15s ease-in-out 0s;
@@ -178,12 +177,12 @@
 }
 
 .map-container{
-	background-color: rgba(0,0,0,.8);
-	display: block;
 	position: relative;
-	color: #fff;
+	display: block;
 	padding: 10px;
 	margin-bottom: 30px;
+	background-color: rgba(0,0,0,.8);
+	color: #fff;
 }
 
 .lt-ie9 .map-container{
@@ -192,18 +191,18 @@
 
 .google-map img{
 	width: 100%;
-	height: initial;
 	-moz-height: initial;
+	height: initial;
 }
 
 .address-container{
-	text-align: center;
 	padding-top: 10px;
+	text-align: center;
 }
 
 .address-container > *{
-	margin: 5px 0;
 	display: block;
+	margin: 5px 0;
 }
 
 .address-container address{
@@ -211,9 +210,9 @@
 }
 
 .address-container .contact-links a{
-	color: #fff;
 	display: inline-block;
 	margin: 0 5px;
+	color: #fff;
 }
 
 .address-container .social-links{
@@ -221,12 +220,12 @@
 }
 
 .address-container .social-links a{
-	background-size: 24px 24px;
+	display: inline-block;
 	width: 24px;
 	height: 24px;
 	padding: 0;
 	margin: 0 10px;
-	display: inline-block;
+	background-size: 24px 24px;
 }
 
 .no-touch .address-container .social-links a:hover{

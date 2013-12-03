@@ -3,8 +3,8 @@
    ============= */
    
 .slideshow{
-	width: 100%;
 	position: relative;
+	width: 100%;
 }
 
 .slideshow img{
@@ -14,8 +14,8 @@
 
 .slide-navigator{
 	position: absolute;
-	right: 20px;
 	top: 20px;
+	right: 20px;
 }
 
 .slide-details-anchor{
@@ -34,25 +34,25 @@
 }
 
 .slide-details{
-	display: none;
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
-	background-color: rgba(0,0,0,.8);
+	display: none;
 	width: 350px;
-	font-size: 13px;
 	padding: 15px;
+	background-color: rgba(0,0,0,.8);
+	font-size: 13px;
 }
 
 .lt-ie9 .slide-details{
 	background: url("images/general/overlay-black-80.png") repeat transparent;
 }
 
-.slide-details h2{color: #fff;}
+.slide-details h2{ color: #fff; }
 
 .slide-details .btn-more{
-	float: right;
 	display: inline;
+	float: right;
 }
 
 .slide-details h3{
@@ -66,9 +66,9 @@
 .slideshow .loadbar{
 	position: absolute;
 	bottom: 0;
+	width: 100%;
 	height: 3px;
 	background-color: rgba(0,0,0,.2);
-	width: 100%;
 }
 
 .lt-ie9 .slideshow .loadbar{
@@ -76,9 +76,9 @@
 }
 
 .loadbar span{
+	display: block;
 	height: 3px;
 	background-color: #a0090b;
-	display: block;
 }
 
 
@@ -87,13 +87,13 @@
 }
 
 .dct-content > * {
-	margin-bottom: 20px;
 	display: block;
+	margin-bottom: 20px;
 }
 
 .welcome-box{
-	padding: 20px 0;
 	max-width: 800px;
+	padding: 20px 0;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -104,26 +104,26 @@
 
 
 .testimonial-list > div{
-	margin-bottom: 15px;
 	padding: 60px 10px 0;
+	margin-bottom: 15px;
 }
 
 
 .testimonial-list section{
-	text-align: center;
 	position: relative;
 	top: -100px;
 	margin-bottom: -100px;
+	text-align: center;
 }
 
 .testimonial-list figure{
 	position: relative;
 	top: 50px;
 	display: inline-block;
+	overflow: hidden;
+	border: 5px solid rgba(255,255,255,.2);
 	width: 100px;
 	height: 100px;
-	border: 5px solid rgba(255,255,255,.2);
-	overflow: hidden;
 	background-color: #111;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -140,8 +140,8 @@
 }
 
 .testimonial-list aside{
-	background-color: rgba(0,0,0,.8);
 	padding: 60px 20px 20px;
+	background-color: rgba(0,0,0,.8);
 }
 
 .lt-ie9 .testimonial-list aside{
@@ -154,19 +154,19 @@
 }
 
 .testimonial-list time{
+	display: block;
 	font-size: 12px;
 	font-style: italic;
 	color: #555;
-	display: block;
 }
 
 .testimonial-list p{
+	overflow: hidden;
+	margin-bottom: 0;
+	max-height: 120px;
 	font-size: 13px;
 	font-weight: 300;
 	line-height: 20px;
-	margin-bottom: 0;
-	max-height: 120px;
-	overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {

@@ -30,8 +30,8 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
     padding: 0;
+    margin: 1em 0;
 }
 
 img {
@@ -40,8 +40,8 @@ img {
 
 fieldset {
     border: 0;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 textarea {
@@ -57,10 +57,10 @@ textarea {
 }
 
 .chromeframe {
+    padding: 0.2em 0;
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
-    padding: 0.2em 0;
 }
 
 
@@ -69,15 +69,15 @@ textarea {
    ========================================================================== */
 
 body {
+    background: url("images/general/bg.png") repeat left top #101011;
+    color: #ccc;
     font: 16px/26px 'Helvetica Neue', 'Helvetica', 'Open Sans', sans-serif;
-	background: url("images/general/bg.png") repeat left top #101011;
-	color: #ccc;
     font-weight: 300;
 }
 
 ul{
-	margin: 0;
 	padding: 0;
+    margin: 0;
 	list-style: none;
 }
 
@@ -86,10 +86,10 @@ ul{
 }
 
 .dct-list li{
-    background: url("images/general/bullet.png") no-repeat left 5px;
     padding-left: 20px;
-    background-size: 12px 12px;
     margin-bottom: 5px;
+    background: url("images/general/bullet.png") no-repeat left 5px;
+    background-size: 12px 12px;
 }
 
 .wrapper {
@@ -98,9 +98,9 @@ ul{
 }
 
 h1, h2, h3, h4, h5, h6{
-	font-weight: 300;
-	text-transform: uppercase;
 	color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 b{
@@ -120,28 +120,29 @@ a:link{
 
 a, a:link{ text-decoration: none; }
 
-h2 {font-size: 25px;}
-h3 {font-size: 20px;}
+h2{ font-size: 25px; }
 
-p{ line-height: 23px;}
+h3{ font-size: 20px; }
+
+p{ line-height: 23px; }
 
 *[data-href]{
     cursor: pointer;
 }
 
 a[class *="btn"]{
-	background-color: #a0090b;
-	color: #fff;
-	text-align: center;
-	padding: 3px 15px 3px 15px;
 	display: block;
+    padding: 3px 15px 3px 15px;
+    background-color: #a0090b;
+    color: #fff;
+    text-align: center;
     clear: both;
 }
 
 a.btn-more{
-    text-align: left;
     padding: 1px 30px 1px 15px;
-	background: url("images/general/arrow-small-right.png") no-repeat right 0 #a0090b;
+    background: url("images/general/arrow-small-right.png") no-repeat right 0 #a0090b;
+    text-align: left;
 }
 
 a.btn-large{
@@ -187,28 +188,27 @@ span[class ^="icon-"]{
 .icon-twitter{ background-image: url("images/general/icon-twitter-white.png"); }
 .icon-youtube{ background-image: url("images/general/icon-youtube-white.png"); }
 .icon-instagram{ background-image: url("images/general/icon-instagram-white.png"); }
-
 .icon-fb-colored{ background-image: url("images/general/icon-facebook-colored.png"); }
 .icon-tw-colored{ background-image: url("images/general/icon-twitter-colored.png"); }
 .icon-gplus-colored{ background-image: url("images/general/icon-google-colored.png"); }
 
 
 .dct-checkbox{
-    border: 3px solid rgba(255,255,255,.2);
-    padding: 3px;
     position: absolute;
+    z-index: 10;
     top: 50%;
     left: -16px;
-    margin-top: -16px;
+    border: 3px solid rgba(255,255,255,.2);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
     width: 32px;
     height: 32px;
+    padding: 3px;
+    margin-top: -16px;
     -webkit-transition: all 0.15s ease-in-out 0s;
     -moz-transition: all 0.15s ease-in-out 0s;
     transition: all 0.15s ease-in-out 0s;
-    z-index: 10;
 }
 
 .lt-ie9 .dct-checkbox{
@@ -220,13 +220,13 @@ span[class ^="icon-"]{
     display: block;
     width: 100%;
     height: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
     background-color: #a0090b;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
     -webkit-transition: all 0.15s ease-in-out 0s;
     -moz-transition: all 0.15s ease-in-out 0s;
     transition: all 0.15s ease-in-out 0s;
@@ -249,10 +249,10 @@ span[class ^="icon-"]{
 }
 
 .brand-list{
-    background-color: rgba(0,0,0,.8);
-    padding: 15px;
     display: inline-block;
     width: 100%;
+    padding: 15px;
+    background-color: rgba(0,0,0,.8);
     text-align: left;
 }
 
@@ -262,12 +262,12 @@ span[class ^="icon-"]{
 
 .brand-list li{
     display: inline-block;
-    text-align: center;
-    margin: 2% 2.5% 0;
     height: 100px;
+    margin: 2% 2.5% 0;
     -webkit-transition: all 0.2s linear 0s;
     -moz-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
+    text-align: center;
 }
 
 .brand-list li a{
@@ -275,9 +275,10 @@ span[class ^="icon-"]{
 }
 
 
-.brand-list li img{
-    display: inline-block;
+.brand-list li img,
+.brand-list li span{
     position: relative;
+    display: inline-block;
     -webkit-transition: all 0.15s ease-in-out 0s;
     -moz-transition: all 0.15s ease-in-out 0s;
     transition: all 0.15s ease-in-out 0s;
@@ -285,10 +286,6 @@ span[class ^="icon-"]{
 
 .brand-list li span{
     display: block;
-    position: relative;
-    -webkit-transition: all 0.15s ease-in-out 0s;
-    -moz-transition: all 0.15s ease-in-out 0s;
-    transition: all 0.15s ease-in-out 0s;
 }
 
 .no-touch .brand-list li a:hover{
@@ -296,8 +293,8 @@ span[class ^="icon-"]{
 }
 
 .no-touch .brand-list li a:hover img{
-    color: #fff;
     top: -2px;
+    color: #fff;
 }
 
 .no-touch .brand-list li a:hover span{
@@ -315,8 +312,8 @@ span[class ^="icon-"]{
     bottom: 0;
     left: 0;
     width: 100%;
-    text-align: center;
     background-color: rgba(0,0,0,.8);
+    text-align: center;
     -webkit-transition: all 0.2s ease-in-out 0s;
     -moz-transition: all 0.2s ease-in-out 0s;
     transition: all 0.2s ease-in-out 0s;
@@ -327,26 +324,26 @@ span[class ^="icon-"]{
 }
 
 .products-cat-list figcaption span{
+    display: inline-block;
     padding-top: 3%;
     padding-bottom: 3%;
-    display: inline-block;
+    color: #fff;
     line-height: 24px;
     font-size: 110%;
-    color: #fff;
 }
 
 .products-cat-list .overlay-box{
-    background-color: rgba(0,0,0,.8);
-    width: 100%;
-    height: 100%;
     position: absolute;
     left: 0;
     bottom: -100%;
+    width: 100%;
+    height: 100%;
     padding: 10px;
+    background-color: rgba(0,0,0,.8);
+    text-align: center;
     -webkit-transition: all 0.2s ease-in-out 0s;
     -moz-transition: all 0.2s ease-in-out 0s;
     transition: all 0.2s ease-in-out 0s;
-    text-align: center;
 }
 
 .lt-ie9 .products-cat-list .overlay-box{
@@ -355,39 +352,39 @@ span[class ^="icon-"]{
 
 .products-cat-list .overlay-box span[class *="icon-"]{
     display: inline-block;
-    background-size: 60px 60px;
     width: 60px;
     height: 60px;
+    background-size: 60px 60px;
 }
 
 .products-cat-list .overlay-box h4{
-    font-size: 18px;
     margin: 5px 0;
+    font-size: 18px;
     font-weight: 400;
 }
 
 .products-cat-list .overlay-box p{
-    margin-top: 0;
-    font-size: 12px;
-    color: #ccc;
     display: none;
+    margin-top: 0;
+    color: #ccc;
+    font-size: 12px;
     line-height: 18px;
 }
 
 
 .header-container{
-	background-color: #000;
-	padding: 20px 0;
 	position: relative;
+    padding: 20px 0;
+    background-color: #000;
 }
 .header-container hgroup{
 	position: absolute;
-	left: 50%;
-	top: 12px;
-	width: 250px;
-	margin: 0 0 0 -125px;
-	text-align: center;
 	z-index: 10;
+    top: 12px;
+    left: 50%;
+    width: 250px;
+    margin: 0 0 0 -125px;
+    text-align: center;
 }
 
 .header-container hgroup > *{
@@ -403,10 +400,10 @@ span[class ^="icon-"]{
 }
 
 .header-container hgroup h1{
-    vertical-align: middle;
+    margin: 0;
     line-height: 50px;
     font-size: 30px;
-    margin: 0;
+    vertical-align: middle;
 }
 
 .header-container hgroup h2{
@@ -421,9 +418,9 @@ span[class ^="icon-"]{
 }
 
 .mobile-header-anchors a{
-	width: 32px;
-	height: 32px;
 	display: block;
+    width: 32px;
+    height: 32px;
 }
 
 .no-touch .mobile-header-anchors a:hover{
@@ -445,8 +442,7 @@ span[class ^="icon-"]{
     background: url("images/general/icon-filter-white.png") no-repeat;
 }
 
-.header-container header > aside{display: none;}
-
+.header-container header > aside{ display: none; }
 
 .banner-wrapper{
     width: 100%;
@@ -465,12 +461,12 @@ span[class ^="icon-"]{
 }
 
 .banner-wrapper .banner-details{
-    background-color: rgba(0,0,0,.8);
     position: absolute;
     bottom: 10px;
     left: 0;
     width: 300px;
     padding: 15px;
+    background-color: rgba(0,0,0,.8);
 }
 
 .lt-ie9 .banner-wrapper .banner-details{
@@ -478,9 +474,9 @@ span[class ^="icon-"]{
 }
 
 .banner-details img{
+    float: left;
     max-height: 50px;
     margin-right: 20px;
-    float: left;
 }
 
 .banner-details hgroup{
@@ -494,8 +490,8 @@ span[class ^="icon-"]{
 
 .line-title,
 .dct-content > .line-title{
-    display: none;
     position: relative;
+    display: none;
     width: 100%;
     padding: 30px 0;
 }
@@ -505,27 +501,27 @@ span[class ^="icon-"]{
 }
 
 .line-title:before{
+    position: absolute;
+    top: 50%;
+    left: 0;
     border-top: 1px solid #444;
     height: 1px;
     width: 100%;
     content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
 }
 
 .line-title > *{
-    background: url("images/general/bg.png") repeat left top;
     position: relative;
     z-index: 1;
+    background: url("images/general/bg.png") repeat left top;
 }
 
 .line-title h2,
 .line-title h3,
 .line-title h4,
 .line-title h5{
-    padding-right: 20px;
     float: left;
+    padding-right: 20px;
     margin: 0;
 }
 
@@ -538,10 +534,10 @@ span[class ^="icon-"]{
 }
 
 .line-title .breadcrumb{
-    padding-left: 10px;
     float: right;
-    font-size: 13px;
+    padding-left: 10px;
     color: #888;
+    font-size: 13px;
 }
 
 .line-title .breadcrumb a{
@@ -553,11 +549,11 @@ span[class ^="icon-"]{
 }
 
 .image-frame{
-    border: 5px solid rgba(255,255,255,.2);
-    display: block;
     position: relative;
-    color: #fff;
+    display: block;
     overflow: hidden;
+    border: 5px solid rgba(255,255,255,.2);
+    color: #fff;
 }
 
 .lt-ie9 .image-frame{
@@ -565,29 +561,27 @@ span[class ^="icon-"]{
 }
 
 .image-frame figure{
+    position: relative;
     overflow: hidden;
     width: 100%;
-    position: relative;
 }
 
 .image-frame img{
-    width: 100%;
     display: block;
+    width: 100%;
 }
 
-
-
-.lg-screen{display: none}
+.lg-screen{ display: none; }
 
 .default-dropdown{
-    background-color: rgba(0,0,0,.8);
-    border: 0;
-    color: #ccc;
-    padding: 10px;
     display: block;
-    text-align: left;
-    font-size: 14px;
+    border: 0;
     width: 100%;
+    padding: 10px;
+    background-color: rgba(0,0,0,.8);
+    color: #ccc;
+    font-size: 14px;
+    text-align: left;
 }
 
 .lt-ie9 .default-dropdown{
@@ -603,19 +597,19 @@ span[class ^="icon-"]{
 }
 
 .footer-container{
-    background-color: #000;
     padding: 20px 0;
+    background-color: #000;
 }
 
 .address-box{
-    text-align: center;
-    font-size: 14px;
     padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
 }
 
 .address-box .logo{
-    margin-bottom: 20px;
     display: inline-block;
+    margin-bottom: 20px;
 }
 
 .address-box .logo img{
@@ -623,9 +617,9 @@ span[class ^="icon-"]{
 }
 
 .address-box address{
-    font-style: normal;
-    font-size: 15px;
     margin-bottom: 10px;
+    font-size: 15px;
+    font-style: normal;
 }
 
 .address-box .contact-links{
@@ -633,13 +627,13 @@ span[class ^="icon-"]{
 }
 
 .address-box .contact-links a{
-    background-color: #111;
+    position: relative;
+    display: inline-block;
     width: 47%;
     margin: 0 1%;
+    background-color: #111;
     color: #fff;
-    display: inline-block;
     font-size: 15px;
-    position: relative;
 }
 
 .address-box .contact-links a:active{
@@ -647,9 +641,9 @@ span[class ^="icon-"]{
 }
 
 .address-box .contact-links a span{
-    background-size: 16px 16px;
-    padding: 5px 10px 5px 20px;
     display: inline-block;
+    padding: 5px 10px 5px 20px;
+    background-size: 16px 16px;
     background-repeat: no-repeat;
     background-position: left center;
 }
@@ -661,12 +655,12 @@ span[class ^="icon-"]{
 
 .address-box .social-links a{
     display: inline-block;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 32px 32px;
     width: 32px;
     height: 32px;
     margin: 0 10px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 32px 32px;
 }
 
 .address-box .work-hours li{
@@ -676,21 +670,21 @@ span[class ^="icon-"]{
 
 
 .product-list > div{
-    margin-bottom: 15px;
     padding: 0 10px;
+    margin-bottom: 15px;
 }
 
 
 .product-list .product-price{
     position: absolute;
+    z-index: 1;
     right: 0;
     bottom: 5px;
-    background-color: #a0090b;
-    font-size: 15px;
-    padding: 3px 5px;
-    color: #fff;
     display: block;
-    z-index: 1;
+    padding: 3px 5px;
+    background-color: #a0090b;
+    color: #fff;
+    font-size: 15px;
     -webkit-transition: all 0.2s ease-in-out 0s;
     -moz-transition: all 0.2s ease-in-out 0s;
     transition: all 0.2s ease-in-out 0s;
@@ -704,23 +698,24 @@ span[class ^="icon-"]{
     overflow: hidden;
     width: 100%;
 }
+
 .product-list img{
     width: 100%;
 }
 
 .product-list .overlay-box{
     position: absolute;
-    left: 0;
-    bottom: -100%;
 	z-index: 10;
-    padding: 10px;
-	width: 100%;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
     height: 100%;
+    padding: 10px;
     background-color: rgba(0,0,0,.8);
+    text-align: center;
     -webkit-transition: all 0.2s ease-in-out 0s;
     -moz-transition: all 0.2s ease-in-out 0s;
     transition: all 0.2s ease-in-out 0s;
-    text-align: center;
 }
 
 .lt-ie9 .product-list .overlay-box{
@@ -748,9 +743,9 @@ span[class ^="icon-"]{
 }
 
 .product-list h4 {
-    line-height: 20px;
-    font-size: 16px;
     margin-top: 5px;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center;
 }
 
@@ -792,26 +787,26 @@ span[class ^="icon-"]{
 
 .footer-links section h4{
     border-bottom: 1px solid #1e1e1e;
-    font-weight: 300;
     margin: 0 0 10px;
+    font-weight: 300;
 }
 
 .footer-links section a{
-    font-size: 14px;
     color: #888;
+    font-size: 14px;
 }
 
 .no-touch .footer-links section a:hover,
 .footer-links section a.active{
-    color: #fff;
-    padding-left: 5px;
     border-left: 2px solid #a0090b;
+    padding-left: 5px;
+    color: #fff;
 }
 
 .footer-links section [class *=" icon-"],
 .footer-links section [class ^="icon-"]{
-    background-size: 16px 16px;
     padding-left: 24px;
+    background-size: 16px 16px;
 }
 
 .no-touch .footer-links section [class *=" icon-"]:hover,
@@ -824,12 +819,12 @@ span[class ^="icon-"]{
 
 .copyright{
     display: inline-block;
-    width: 100%;
     border-top: 1px solid #101010;
+    width: 100%;
     margin-top: 20px;
-    text-align: center;
-    font-size: 14px;
     color: #555;
+    font-size: 14px;
+    text-align: center;
 }
 
 .copyright p{
@@ -842,17 +837,17 @@ span[class ^="icon-"]{
    ========================================================================== */
 
 .ir {
-    background-color: transparent;
     border: 0;
     overflow: hidden;
+    background-color: transparent;
     *text-indent: -9999px;
 }
 
 .ir:before {
-    content: "";
     display: block;
     width: 0;
     height: 150%;
+    content: "";
 }
 
 .hidden {
@@ -861,24 +856,24 @@ span[class ^="icon-"]{
 }
 
 .visuallyhidden {
+    position: absolute;
+    overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
     width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
 }
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
+    position: static;
+    overflow: visible;
     clip: auto;
+    width: auto;
     height: auto;
     margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
 }
 
 .invisible {
@@ -907,9 +902,9 @@ span[class ^="icon-"]{
 
 @media print {
     * {
+        box-shadow: none !important;
         background: transparent !important;
         color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
         text-shadow: none !important;
     }
 

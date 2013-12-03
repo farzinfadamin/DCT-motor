@@ -1,5 +1,5 @@
 /* =============
-   About{}
+   About
    ============= */
 
 .about-container,
@@ -8,9 +8,9 @@
 }
 
 .about-video-frame{
-	background-color: rgba(0,0,0,.8);
 	padding: 10px;
 	margin: 0 auto;
+	background-color: rgba(0,0,0,.8);
 }
 
 .lt-ie9 .about-video-frame{
@@ -19,8 +19,8 @@
 
 .about-video-frame section{
 	position: relative;
-	height: 0;
 	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
 	overflow: hidden;
 }
 
@@ -35,8 +35,8 @@
 }
 
 .about-video-frame footer{
-	text-align: right;
 	padding: 10px 0 0;
+	text-align: right;
 }
 
 .about-video-frame footer a{

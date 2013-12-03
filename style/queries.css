@@ -4,19 +4,20 @@
 
 @media only screen and (min-width: 768px) {
 
-    .sm-screen{display: none;}
-    .lg-screen{display: block;}
+    .sm-screen{ display: none; }
+
+    .lg-screen{ display: block; }
 
     .hour-box{
         padding: 0 10%;
     }
 
     .header-container{
-        height: initial;
-		-moz-height: initial;
-        opacity: 0.95;
-        width: 100%;
         z-index: 100;
+        width: 100%;
+        height: initial;
+        -moz-height: initial;
+        opacity: 0.95;
     }
 	
 	.ie .header-container{
@@ -24,41 +25,44 @@
     }
 	
     .header-container hgroup{
+        -moz-position: initial;
         position: initial;
-		-moz-position: initial;
-        left: initial;
-        -moz-left: initial;
-        top: initial;
         -moz-top: initial;
+        top: initial;
+        -moz-left: initial;
+        left: initial;
+        float: left;
         width: 250px;
         margin: 0;
-        float: left;
     }
 	
 	.ie .header-container hgroup{
         position: auto;
-        left: auto;
         top: auto;
+        left: auto;
     }
 
     .inner-page .header-container .logo{
         display: block;
     }
+
     .header-container hgroup h1,
     .header-container hgroup h2{
         display: none;
     }
 
-    .mobile-header-anchors{display: none;}
-    .header-container .logo img{ height: 60px;}
+    .mobile-header-anchors{ display: none; }
+
+    .header-container .logo img{ height: 60px; }
 
     .header-container header > aside{
+        display: block;
         float: right;
         text-align: right;
-        display: block;
     }
 
-    .header-container .top-section{ margin-bottom: 10px;}
+    .header-container .top-section{ margin-bottom: 10px; }
+
     .header-container .top-section > *{
         display: inline-block;
     }
@@ -66,11 +70,11 @@
     .header-container .top-section > a{
         padding-right: 5px;
         font-size: 18px;
-        color: #ccc
+        color: #ccc;
     }
 
     .no-touch .header-container .top-section > a:hover{
-        color: #fff
+        color: #fff;
     }
 
     .header-container .top-section small{
@@ -78,12 +82,12 @@
     }
 
     .header-container .social-links a{
-        background-size: 16px 16px;
-        padding-left: 0;
         display: inline-block;
         width: 16px;
         height: 16px;
+        padding-left: 0;
         margin: 0 3px;
+        background-size: 16px 16px;
     }
 
     .no-touch .header-container .social-links a:hover{
@@ -96,34 +100,37 @@
     }
 
     .main-nav a{
+        padding-bottom: 20px;
+        border-bottom: 0;
         color: #ccc;
         text-transform: uppercase;
-        border-bottom: 0;
-        padding-bottom: 20px;
     }
 
     .no-touch .main-nav a:hover,
     .main-nav a.active{
-        color: #fff;
-        border-bottom: 2px solid #a0090b;
         padding-bottom: 5px;
+        border-bottom: 2px solid #a0090b;
+        color: #fff;
     }
 
     .main-nav a.icon-home{
-        background-size: 24px 24px;
-        background-position: center top;
         display: block;
         height: 29px;
         padding-bottom: 5px;
+        background-position: center top;
+        background-size: 24px 24px;
     }
 
-    .slide-details-anchor{display: none;}
+    .slide-details-anchor{ display: none; }
+
     .slide-details{
         display: block;
         width: 400px;
     }
-    .slide-details p{font-size: 14px}
-    .slide-details .btn-more{margin-top: 15px}
+
+    .slide-details p{ font-size: 14px; }
+
+    .slide-details .btn-more{ margin-top: 15px; }
 
     .banner-wrapper{
         margin-bottom: 0;
@@ -137,34 +144,35 @@
 
 
     .dct-box header{
-        text-align: left;
         display: inline-block;
         width: 100%;
+        text-align: left;
     }
 
-    .dct-box header h2{ float: left;}
+    .dct-box header h2{ float: left; }
+
     .dct-box header a{
+        display: block;
         float: right;
         margin-top: 20px;
-        display: block;
         clear: none;
     }
 
     .products-cat-list .overlay-box span[class *="icon-"]{
-        background-size: 70px 70px;
         width: 70px;
         height: 70px;
+        background-size: 70px 70px;
     }
 
     .products-cat-list .overlay-box h4{
-        font-size: 20px;
         margin: 5px 0 10px;
+        font-size: 20px;
         font-weight: 400;
     }
 
     .product-list h4 {
-        text-align: left;
         font-size: 13px;
+        text-align: left;
     }
 
     .no-touch .product-list section:hover .overlay-box{
@@ -180,13 +188,13 @@
     }
 
     .brand-list li span{
-        opacity: 0;
         bottom: 10px;
+        opacity: 0;
     }
 
     .no-touch .brand-list li a:hover img{
-        color: #fff;
         top: -5px;
+        color: #fff;
     }
 
     .no-touch .brand-list li a:hover span{
@@ -195,10 +203,10 @@
     }
 	
 	.testimonial-list section{
-		top: initial;
 		-moz-top: initial;
-		margin-bottom: initial;
+        top: initial;
 		-moz-margin-bottom: initial;
+        margin-bottom: initial;
 	}
 	
 	.ie .testimonial-list section{
@@ -206,27 +214,29 @@
 		margin-bottom: auto;
 	}
 
-    .footer-links{ display: block;}
-    .address-box .social-links{display: none;}
+    .footer-links{ display: block; }
+
+    .address-box .social-links{ display: none; }
+
     .address-box .contact-links a span {
-        background-size: 24px 24px;
         padding: 5px 10px 5px 30px;
+        background-size: 24px 24px;
     }
 
-    .copyright .right{float: right;}
+    .copyright .right{ float: right; }
 
-    .copyright .left{float: left;}
+    .copyright .left{ float: left; }
 
-    .testimonial-list > div{padding-top: 0;}
+    .testimonial-list > div{ padding-top: 0; }
 	
     .testimonial-list section{
-        text-align: left;
         position: relative;
-        top: initial;
         -moz-top: initial;
-        margin-bottom: initial;
-        -moz-margin-bottom: initial;
+        top: initial;
         padding-left: 70px;
+        -moz-margin-bottom: initial;
+        margin-bottom: initial;
+        text-align: left;
     }
 	
 	.ie .testimonial-list section{
@@ -241,18 +251,18 @@
 
     .testimonial-list figure{
         position: absolute;
+        z-index: 10;
         top: 50%;
         left: 0;
-        margin-top: -60px;
         width: 120px;
         height: 120px;
-        z-index: 10;
+        margin-top: -60px;
     }
 
     .testimonial-list .even-box figure{
-        left: initial;
-        -moz-left: initial;
         right: 0;
+        -moz-left: initial;
+        left: initial;
     }
 	
 	.ie .testimonial-list .even-box figure{
@@ -261,10 +271,10 @@
 
     .testimonial-list aside {
         position: relative;
-        top: initial;
         -moz-top: initial;
-        padding: 20px 20px 20px 75px;
+        top: initial;
         height: 200px;
+        padding: 20px 20px 20px 75px;
     }
 	
 	.ie .testimonial-list aside {
@@ -319,8 +329,8 @@
     }
 
     .thumbs-list a{
-        display: inline-block;
         position: relative;
+        display: inline-block;
     }
 
     .thumbs-list img{
@@ -328,12 +338,12 @@
     }
 
     .thumbs-list a:before{
-        opacity: 0;
         position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
         content: "";
         display: block;
-        left: 0;
-        top: 0;
         width: 100%;
         height: 100%;
         background: url("images/general/icon-plus-white.png") no-repeat center center rgba(0,0,0,.8);
@@ -365,8 +375,8 @@
     }
 
     .brand-make figcaption span{
-        font-size: 18px;
         padding-top: 10px;
+        font-size: 18px;
     }
 
     .dropdown-container{
@@ -375,13 +385,13 @@
     }
 
     .dropdown-container > a{
+        display: block;
+        padding: 5px 10px;
         background: url("images/general/arrow-down-gray.png") no-repeat right center rgba(0,0,0,.8);
         background-origin: content-box;
         color: #ccc;
-        padding: 5px 10px;
-        display: block;
-        text-align: left;
         font-size: 14px;
+        text-align: left;
     }
 
     .lt-ie9 .dropdown-container > a{
@@ -395,16 +405,16 @@
     }
 
     .dropdown-container > ul{
-        display: none;
-        background-color: #000;
-        padding: 5px;
-        text-align: left;
-        font-size: 14px;
         position: absolute;
+        z-index: 10;
         top: 0;
         left: 0;
+        display: none;
         width: 200%;
-        z-index: 10;
+        padding: 5px;
+        background-color: #000;
+        font-size: 14px;
+        text-align: left;
     }
 
     .dropdown-container > ul.opened{
@@ -412,9 +422,9 @@
     }
 
     .dropdown-container.right-aligned > ul{
-        left: initial;
-        -moz-left: initial;
         right: 0;
+        -moz-left: initial;
+        left: initial;
     }
 	
 	.ie .dropdown-container.right-aligned > ul{
@@ -427,14 +437,14 @@
     }
 
     .dropdown-container > ul a{
-        color: #ccc;
         display: block;
         padding: 5px;
+        color: #ccc;
     }
 
     .no-touch .dropdown-container > ul a:hover{
-        color: #fff;
         background-color: #a0090b;
+        color: #fff;
     }
 
     .brand-make-select > section h4{
@@ -464,8 +474,8 @@
     ========================*/
 
     .fri-sat .hour-tooltip{
-        bottom: initial;
         -moz-bottom: initial;
+        bottom: initial;
     }
 	
 	.ie .fri-sat .hour-tooltip{
@@ -473,8 +483,8 @@
     }
 
     .fri-sat .hour-tooltip:before{
-        top: initial;
         -moz-top: initial;
+        top: initial;
         bottom: -6px;
         border-color: #a0090b transparent transparent transparent;
     }
@@ -487,10 +497,10 @@
 
 @media only screen and (min-width: 992px) {
 
-	.footer-links section{float: left;}
+	.footer-links section{ float: left; }
 
     .address-box address,
-    .address-box .contact-links a{font-size: 12px;}
+    .address-box .contact-links a{ font-size: 12px; }
 
     a[class *="btn"]{
         display: inline-block;
@@ -510,22 +520,22 @@
     }
 
     .selected-cats-list li{
+        float: none;
         width: 80%;
         padding: 10px;
         margin: 0 auto;
-        float: none;
     }
 
     .selected-cats-list li figure{
+        position: relative;
         display: block;
         overflow: hidden;
         width: 100%;
-        position: relative;
     }
 
     .selected-cats-list li img{
-        width: 100%;
         display: block;
+        width: 100%;
     }
 
     .dct-checkbox{
@@ -549,9 +559,9 @@
 
     .products-cat-list .overlay-box span[class *=" icon-"],
     .products-cat-list .overlay-box span[class ^="icon-"]{
-        background-size: 60px 60px;
         width: 60px;
         height: 60px;
+        background-size: 60px 60px;
     }
 
     .products-cat-list .overlay-box h4{

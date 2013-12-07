@@ -151,21 +151,32 @@
 	position: absolute;
 	top: 10px;
 	right: 10px;
-	width: 18px;
-	height: 18px;
-	background: url("images/general/icon-tick-black.png") no-repeat right top #a0090b;
-	background-size: 16px 16px;
+	color: #a0090b;
 	border-radius: 50% 50%;
-	content: "";
+
+	font-family: 'car-iconset';
+    speak: none;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    content: "\e60a";
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
 	-webkit-transition: all 0.12s ease-in-out 0s;
 	-moz-transition: all 0.12s ease-in-out 0s;
 	transition: all 0.12s ease-in-out 0s;
 }
 
 .no-touch .filter-products a.checked:hover:before{
-	background-image: url("images/general/icon-cross-black.png");
-	background-position: center center;
-	background-color: #ccc;
+	color: #ccc;
+	content: "\e605";
 }
 
 .no-touch .filter-products a:hover,
@@ -173,9 +184,9 @@
 	opacity: 1;
 }
 
-.filter-products a span{
-	padding-left: 24px;
-	background-size: 16px 16px;
+.filter-products a span:before{
+	font-size: 24px;
+	padding-right: 5px;
 }
 
 .product-list-container{
@@ -190,8 +201,7 @@
 	padding: 5px 10px;
 }
 
-.side-box .dropdown-container img,
-.side-box .dropdown-container *[class *="icon-"]{
+.side-box .dropdown-container img{
 	display: inline;
 	max-width: 16px;
 	max-height: 16px;
@@ -202,8 +212,23 @@
 	margin-right: 10px;
 }
 
-.side-box .dropdown-container *[class *="icon-"]{
-	padding-left: 26px;
+.side-box .dropdown-container [class *=" icon-"]:before,
+.side-box .dropdown-container [class ^="icon-"]:before{
+	padding-right: 5px;
+	font-family: 'car-iconset';
+    speak: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #ccc;
+    vertical-align: text-bottom;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .side-box *[class *="btn"]{

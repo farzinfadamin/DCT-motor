@@ -1,0 +1,84 @@
+.icon-arrow-left {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe600;');
+}
+.icon-arrow-down {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe601;');
+}
+.icon-arrow-right {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe602;');
+}
+.icon-arrow-up {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe603;');
+}
+.icon-youtube {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe604;');
+}
+.icon-unselected {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe605;');
+}
+.icon-twitter {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe606;');
+}
+.icon-tick {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe607;');
+}
+.icon-telephone {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe608;');
+}
+.icon-swheels {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe609;');
+}
+.icon-selected {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60a;');
+}
+.icon-plus {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60d;');
+}
+.icon-menu {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60e;');
+}
+.icon-key {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60f;');
+}
+.icon-instagram {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe610;');
+}
+.icon-info {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe611;');
+}
+.icon-iaccessories {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe612;');
+}
+.icon-home {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe613;');
+}
+.icon-filter {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe614;');
+}
+.icon-email {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe616;');
+}
+.icon-ekits {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe617;');
+}
+.icon-cross {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe618;');
+}
+.icon-icon-calendar {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60b;');
+}
+.icon-icon-facebook {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe60c;');
+}
+.icon-rss {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe615;');
+}
+.icon-products {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe619;');
+}
+.icon-cart {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe61a;');
+}
+.icon-carbrand {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe61b;');
+}

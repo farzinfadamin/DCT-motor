@@ -83,11 +83,9 @@
 
     .header-container .social-links a{
         display: inline-block;
-        width: 16px;
-        height: 16px;
-        padding-left: 0;
         margin: 0 3px;
-        background-size: 16px 16px;
+        color: #fff;
+        font-size: 24px;
     }
 
     .no-touch .header-container .social-links a:hover{
@@ -99,7 +97,8 @@
         margin-left: 20px;
     }
 
-    .main-nav a{
+    .main-nav a,
+    .main-nav a.icon-home:before{
         padding-bottom: 20px;
         border-bottom: 0;
         color: #ccc;
@@ -107,18 +106,21 @@
     }
 
     .no-touch .main-nav a:hover,
-    .main-nav a.active{
+    .main-nav a.active,
+    .main-nav a.icon-home:hover:before,
+    .main-nav a.icon-home.active:before{
         padding-bottom: 5px;
         border-bottom: 2px solid #a0090b;
         color: #fff;
     }
 
-    .main-nav a.icon-home{
-        display: block;
-        height: 29px;
-        padding-bottom: 5px;
-        background-position: center top;
-        background-size: 24px 24px;
+    .main-nav a.icon-home,
+    .main-nav a.icon-home:hover{
+        border-bottom: none;
+    }
+
+    .main-nav a.icon-home:before{
+        vertical-align: text-bottom;
     }
 
     .slide-details-anchor{ display: none; }
@@ -217,11 +219,6 @@
     .footer-links{ display: block; }
 
     .address-box .social-links{ display: none; }
-
-    .address-box .contact-links a span {
-        padding: 5px 10px 5px 30px;
-        background-size: 24px 24px;
-    }
 
     .copyright .right{ float: right; }
 
@@ -346,7 +343,23 @@
         display: block;
         width: 100%;
         height: 100%;
-        background: url("images/general/icon-plus-white.png") no-repeat center center rgba(0,0,0,.8);
+
+        font-family: 'car-iconset';
+        speak: none;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 100px;
+        color: #fff;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        content: "\e60d";
+        background-color: rgba(0,0,0,.8);
         -webkit-transition: all 0.12s ease-in-out 0s;
         -moz-transition: all 0.12s ease-in-out 0s;
         transition: all 0.12s ease-in-out 0s;
@@ -385,10 +398,10 @@
     }
 
     .dropdown-container > a{
+        position: relative;
         display: block;
         padding: 5px 10px;
-        background: url("images/general/arrow-down-gray.png") no-repeat right center rgba(0,0,0,.8);
-        background-origin: content-box;
+        background: rgba(0,0,0,.8);
         color: #ccc;
         font-size: 14px;
         text-align: left;
@@ -398,9 +411,34 @@
         background: url("images/general/overlay-black-80.png") repeat transparent;
     }
 
+    .dropdown-container > a:before{
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        margin-top: -5px;
+        font-family: 'car-iconset';
+        speak: none;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        color: #888;
+        vertical-align: bottom;
+        content: "\e601";
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 
     .no-touch .dropdown-container > a:hover{
         background-color: #000;
+        color: #fff;
+    }
+
+    .no-touch .dropdown-container > a:hover:before{
         color: #fff;
     }
 
@@ -459,9 +497,10 @@
         padding: 12px 0;
     }
 
-    .filter-col .line-title [class *=" icon-"],
-    .filter-col .line-title [class ^="icon-"]{
-        background-size: 24px 24px;
+    .filter-col .line-title [class *=" icon-"]:before,
+    .filter-col .line-title [class ^="icon-"]:before{
+        font-size: 24px;
+        padding-right: 5px;
     }
 
     .pic-list li{

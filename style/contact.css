@@ -215,19 +215,24 @@
 	color: #fff;
 }
 
+.address-container .contact-links a:before{
+	padding-right: 5px;
+}
+
 .address-container .social-links{
 	margin-top: 20px;
 }
 
 .address-container .social-links a{
 	display: inline-block;
-	width: 24px;
-	height: 24px;
 	padding: 0;
 	margin: 0 10px;
-	background-size: 24px 24px;
 }
 
-.no-touch .address-container .social-links a:hover{
-	opacity: .7;
+.address-container .social-links a:before{
+	font-size: 32px;
+}
+
+.no-touch .address-container .social-links a:hover:before{
+	color: #888;
 }

@@ -11,22 +11,43 @@
 }
 
 .faq-list li > a{
-	padding: 5px 10px 5px 25px;
+	padding: 5px 10px;
 	font-size: 15px;
-	background: url("images/general/arrow-left-white.png") no-repeat 10px 12px rgba(0,0,0,.6);
+	background: rgba(0,0,0,.6);
 	color: #fff;
 	display: block;
 }
 
-.lt-ie9 .faq-list li > a{
-	background-color: #000;
+.faq-list li > a:before{
+	padding-right: 5px;
+	font-family: 'car-iconset';
+    speak: none;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #fff;
+    vertical-align: baseline;
+	content: "\e602";
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
 }
 
+.lt-ie9 .faq-list li > a,
 .no-touch .faq-list li > a:hover,
 .faq-list li.active > a{
-	background-image: url("images/general/arrow-down-white.png"); 
-	background-color: #000;
-	padding-left: 35px;
+	background: #000;
+}
+
+.no-touch .faq-list li > a:hover:before,
+.faq-list li.active > a:before{
+	content: "\e601";
+	padding-right: 10px;
 }
 
 .faq-list li > p{

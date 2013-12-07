@@ -18,19 +18,19 @@
 	right: 20px;
 }
 
-.slide-details-anchor{
+.icon-info{
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
-	width: 25px;
-	height: 25px;
-	background: url("images/homepage/icon-details-anchor.png") no-repeat transparent;
+	color: #000;
+	opacity: .9;
 }
 
-.slide-details-anchor:active{
+.icon-info:active{
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	transform: scale(1.1);
+	opacity: 1;
 }
 
 .slide-details{
